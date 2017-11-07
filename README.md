@@ -4,7 +4,7 @@
 
 Build:
  
-    npm run ionic:build [--prod]
+    npm run ionic:build
 
 Run:
  
