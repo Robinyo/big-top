@@ -32,6 +32,9 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.0.1",
+    "electron": "^1.7.9",
+    "electron-builder": "^19.45.1",
+    "foreman": "^2.0.0",
     "typescript": "2.3.4"
   },
   "description": "An Ionic project"

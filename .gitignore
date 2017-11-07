@@ -20,6 +20,7 @@ npm-debug.log*
 coverage/
 dist/
 node_modules/
+docs/
 tmp/
 temp/
 hooks/
@@ -30,6 +31,14 @@ plugins/ios.json
 www/
 $RECYCLE.BIN/
 
+# e2e
+/e2e/*.js
+/e2e/*.map
+
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+
+# Envrionment Variables
+# **/environment.*
+# !**/environment.model.ts
