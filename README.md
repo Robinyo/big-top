@@ -15,7 +15,7 @@ Navigate to `http://localhost:8100/`
 ## Scaffolding
 
 The scaffolding for this project was generated using the [Ionic CLI](https://ionicframework.com/docs/cli/) 
-(version 3.10.3) and the blank template:
+(version 3.16.0) and the blank template:
 
     ionic start big-top --no-cordova blank
 
