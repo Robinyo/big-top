@@ -8,7 +8,7 @@ Build:
 
 Run:
  
-    npm run ionic:serve [--prod]
+    npm run ionic:serve
 
 Navigate to `http://localhost:8100/`
 
