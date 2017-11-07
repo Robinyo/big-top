@@ -1,26 +1,31 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# The Big Top Application
 
-## How to use this template
+## Development server
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+Build:
+ 
+    npm run ionic:build [--prod]
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Run:
+ 
+    npm run ionic:serve [--prod]
 
-### With the Ionic CLI:
+Navigate to `http://localhost:8100/`
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## Scaffolding
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
+The scaffolding for this project was generated using the [Ionic CLI](https://ionicframework.com/docs/cli/) 
+(version 3.10.3) and the blank template:
 
-Then, to run it, cd into `myBlank` and run:
+    ionic start big-top --no-cordova blank
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+Run `ionic g page page-name` to generate a new page.
 
-Substitute ios for android if not on a Mac.
+You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element name]`.
 
+## Resources 
+
+### Ionic Framework
+* [Getting Started](https://ionicframework.com/getting-started)
+* [UI Components](https://ionicframework.com/docs/components/)
+* [Ionic Native: TypeScript wrapper for Cordova/PhoneGap plugins](https://ionicframework.com/docs/native/)
