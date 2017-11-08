@@ -41,5 +41,5 @@
     "electron-builder": "^19.45.1",
     "typescript": "2.3.4"
   },
-  "main": "electron/electron.js"
+  "main": "electron/main.js"
 }
