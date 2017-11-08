@@ -4,7 +4,7 @@
 
 ## Development
 
-Run the following commands (they must be run in separate terminal windows as `ionic serve --no-open` is blocking)
+Run the following commands (they must be run in separate terminal sessions as `ionic serve` is blocking)
  
     ionic serve --no-open
     electron .
