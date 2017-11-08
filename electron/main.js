@@ -1,12 +1,34 @@
 'use strict';
 
 const { app, BrowserWindow } = require('electron');
+const path = require('path');
+const url = require('url');
+
+// Keep a global reference of the window object, if you don't, the window will
+// be closed automatically when the JavaScript object is garbage collected.
+let mainWindow;
 
 function createWindow() {
 
-  let mainWindow = new BrowserWindow({ width: 1200, height: 800 });
+  mainWindow = new BrowserWindow({ width: 1200, height: 800 });
 
-  mainWindow.loadURL("http://localhost:8100");
+  // let pathname = path.join(__dirname, 'www', 'index.html');
+  // var url = 'file://' + __dirname + '/../www/index.html';
+  // let pathname = path.join(__dirname, '/../www/index.html');
+
+  let pathname = path.join(__dirname, '/../www/', 'index.html');
+
+  console.log('pathname: ' + pathname);
+
+  // mainWindow.loadURL("http://localhost:8100");
+
+  // /*
+  mainWindow.loadURL(url.format({
+    pathname: pathname,
+    protocol: 'file:',
+    slashes: true
+  }));
+  // */
 
   mainWindow.webContents.openDevTools();
 

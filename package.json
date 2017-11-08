@@ -10,11 +10,15 @@
   "description": "The Big Top Application",
   "private": true,
   "scripts": {
+    "start": "ionic serve --no-open",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "concurrently-dev": "concurrently -k \"ionic serve --no-open\" \"electron .\"",
+    "concurrently-start": "concurrently -k 'ionic serve --no-open' 'wait-on http://localhost:8100/ && electron .'",
+    "foreman-start": "nf start"
   },
   "dependencies": {
     "@angular/common": "4.4.4",
@@ -37,9 +41,26 @@
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.0.1",
+    "concurrently": "^3.5.0",
     "electron": "^1.7.9",
     "electron-builder": "^19.45.1",
-    "typescript": "2.3.4"
+    "foreman": "^2.0.0",
+    "typescript": "2.3.4",
+    "wait-on": "^2.0.2"
   },
-  "main": "electron/main.js"
+  "main": "electron/main.js",
+  "config": {
+    "ionic_bundler": "webpack",
+    "ionic_webpack": "./config/webpack.config.js"
+  },
+  "build": {
+    "appId": "org.robferguson.bigtop",
+    "files": [
+      "www/**/*",
+      "electron/*"
+    ],
+    "mac": {
+      "category": "productivity"
+    }
+  }
 }
