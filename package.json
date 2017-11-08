@@ -1,8 +1,13 @@
 {
-  "name": "big-top",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "BigTop",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rob Ferguson",
+    "email": "rob.ferguson@robferguson.org",
+    "url": "https://robferguson.org/blog"
+  },
+  "homepage": "https://github.com/Robinyo/big-top",
+  "description": "The Big Top Application",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -34,8 +39,7 @@
     "@ionic/app-scripts": "3.0.1",
     "electron": "^1.7.9",
     "electron-builder": "^19.45.1",
-    "foreman": "^2.0.0",
     "typescript": "2.3.4"
   },
-  "description": "An Ionic project"
+  "main": "electron/electron.js"
 }
