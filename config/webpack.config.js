@@ -7,6 +7,14 @@
  * https://webpack.js.org/configuration/
  */
 
+/*
+
+Failed to load resource: net::ERR_FILE_NOT_FOUND -> https://github.com/electron/electron/issues/1769
+
+publicPath: './build/', // 'build/'
+
+*/
+
 var path = require('path');
 var webpack = require('webpack');
 var ionicWebpackFactory = require(process.env.IONIC_WEBPACK_FACTORY);

@@ -1,16 +1,11 @@
 # The Big Top Application
 
-## Development server
+## Development
 
-Build:
+Run the following commands (they must be run in separate terminal windows as `ionic serve --no-open` is blocking)
  
-    npm run ionic:build
-
-Run:
- 
-    npm run ionic:serve
-
-Navigate to `http://localhost:8100/`
+    ionic serve --no-open
+    electron .
 
 ## Scaffolding
 

@@ -1,2 +1,2 @@
 ionic: npm start
-electron: node electron-wait-ionic.js
+electron: node electron/electron-wait-ionic

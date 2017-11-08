@@ -16,8 +16,8 @@
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "concurrently-dev": "concurrently -k \"ionic serve --no-open\" \"electron .\"",
     "concurrently-start": "concurrently -k 'ionic serve --no-open' 'wait-on http://localhost:8100/ && electron .'",
+    "electron": "electron .",
     "foreman-start": "nf start"
   },
   "dependencies": {
@@ -48,19 +48,5 @@
     "typescript": "2.3.4",
     "wait-on": "^2.0.2"
   },
-  "main": "electron/main.js",
-  "config": {
-    "ionic_bundler": "webpack",
-    "ionic_webpack": "./config/webpack.config.js"
-  },
-  "build": {
-    "appId": "org.robferguson.bigtop",
-    "files": [
-      "www/**/*",
-      "electron/*"
-    ],
-    "mac": {
-      "category": "productivity"
-    }
-  }
+  "main": "electron/main.js"
 }
