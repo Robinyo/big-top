@@ -1,4 +1,4 @@
-// https://github.com/csepulv/electron-with-create-react-app/blob/master/src/electron-starter.js
+// https://github.com/electron/electron-quick-start/blob/master/main.js
 
 const electron = require('electron');
 // Module to control application life.
