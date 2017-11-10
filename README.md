@@ -2,6 +2,10 @@
 
 <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/electron-ionic-blank.png">
 
+The Big Top installer:
+
+<img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
+
 ## Development
 
 To clone the project:
