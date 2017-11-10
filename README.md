@@ -54,6 +54,10 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 
 ## Resources 
 
+## Blog Posts 
+* Rob Ferguson's blog: [Build a Desktop Application with Ionic 3 and Electron](https://robferguson.org/blog/2017/11/09/build-a-desktop-application-with-ionic-3-and-electron/)
+* Rob Ferguson's blog: [Build a Desktop Application with Ionic 3 and Electron - Part 2](https://robferguson.org/blog/2017/11/10/build-a-desktop-application-with-ionic-3-and-electron-part-2/)
+
 ### Electron Resources:
 * Electron docs: [Quick Start](https://electron.atom.io/docs/tutorial/quick-start/)
 * GitHub Pages: [Angular on Electron, part 1](https://sohlich.github.io/post/angular_electron/)
