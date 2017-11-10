@@ -31,6 +31,10 @@ In another terminal run the following command:
 
 ## Production
 
+To build the project:
+
+    ionic build --prod
+    
 To package the application:
 
     npm run dist
