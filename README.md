@@ -29,6 +29,14 @@ In another terminal run the following command:
 
 **Note:** The commands must be run in separate terminal sessions as `ionic serve` is blocking.
 
+## Production
+
+To package the application:
+
+    npm run dist
+
+If everything works as expected electron-builder will create a `/dist` directory.
+
 ## Scaffolding
 
 The scaffolding for this project was generated using the [Ionic CLI](https://ionicframework.com/docs/cli/) 
@@ -50,6 +58,10 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 
 ### Electron Boilerplates:
 * GitHub: [electron-quick-start](https://github.com/electron/electron-quick-start)
+
+### electron-builder:
+* GitHub: [electron-builder](https://github.com/electron-userland/electron-builder)
+* Electron docs: [Code Signing](https://www.electron.build/code-signing)
 
 ### Ionic Resources:
 * Ionic Framework docs: [Get started with the Ionic Framework](https://ionicframework.com/getting-started/)
