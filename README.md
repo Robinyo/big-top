@@ -4,7 +4,16 @@
 
 ## Development
 
-Run the following commands (they must be run in separate terminal sessions as `ionic serve` is blocking)
+To clone the project:
+
+    git clone https://github.com/Robinyo/big-top.git
+
+To build the project:
+
+    cd big-top
+    ionic build
+
+Then, run the following commands (they must be run in separate terminal sessions as `ionic serve` is blocking)
  
     ionic serve --no-open
     electron .
