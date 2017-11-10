@@ -70,6 +70,7 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 
 ### Electron Boilerplates:
 * GitHub: [electron-quick-start](https://github.com/electron/electron-quick-start)
+* GitHub: [electron-react-boilerplate](https://github.com/chentsulin/electron-react-boilerplate)
 
 ### electron-builder:
 * GitHub: [electron-builder](https://github.com/electron-userland/electron-builder)
