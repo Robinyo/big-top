@@ -13,10 +13,17 @@ To build the project:
     cd big-top
     ionic build
 
-Then, run the following commands (they must be run in separate terminal sessions as `ionic serve` is blocking)
- 
+To launch the project:
+
+In a terminal run the following command:
+
     ionic serve --no-open
+
+In another terminal run the following command:
+
     electron .
+
+**Note:** The commands must be run in separate terminal sessions as `ionic serve` is blocking.
 
 ## Scaffolding
 
