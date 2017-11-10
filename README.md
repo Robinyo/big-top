@@ -8,9 +8,13 @@ To clone the project:
 
     git clone https://github.com/Robinyo/big-top.git
 
-To build the project:
+To install the project's dependencies:
 
     cd big-top
+    npm install
+
+To build the project:
+
     ionic build
 
 To launch the project:

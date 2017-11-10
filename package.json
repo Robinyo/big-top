@@ -1,24 +1,33 @@
 {
   "name": "BigTop",
+  "description": "The Big Top Application",
   "version": "1.0.0",
+  "license": "Creative Commons Attribution 3.0 Australia",
   "author": {
     "name": "Rob Ferguson",
     "email": "rob.ferguson@robferguson.org",
     "url": "https://robferguson.org/blog"
   },
-  "homepage": "https://github.com/Robinyo/big-top",
-  "description": "The Big Top Application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Robinyo/big-top"
+  },
+  "bugs": {
+    "url": "https://github.com/Robinyo/big-top/issues"
+  },
   "private": true,
   "scripts": {
-    "start": "ionic serve --no-open",
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "concurrently-start": "concurrently -k 'ionic serve --no-open' 'wait-on http://localhost:8100/ && electron .'",
+    "start": "ionic serve --no-open",
     "electron": "electron .",
-    "foreman-start": "nf start"
+    "concurrently-start": "concurrently -k 'ionic serve --no-open' 'wait-on http://localhost:8100/ && electron'",
+    "foreman-start": "nf start",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "dependencies": {
     "@angular/common": "4.4.4",
@@ -48,5 +57,15 @@
     "typescript": "2.3.4",
     "wait-on": "^2.0.2"
   },
-  "main": "electron/main.js"
+  "main": "electron/main.js",
+  "build": {
+    "appId": "org.robferguson.BigTop",
+    "files": [
+      "electron/main.js",
+      "www/**/*"
+    ],
+    "mac": {
+      "category": "productivity"
+    }
+  }
 }
