@@ -26,6 +26,10 @@ To launch the project:
 In a terminal run the following command:
 
     ionic serve --no-open
+    
+If you want to set the 'ELECTRON_START_URL' environment variable:
+    
+    ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
 
 In another terminal run the following command:
 
