@@ -1,0 +1,10 @@
+.green-and-blue-theme {
+
+  ion-content {
+    @include linear-gradient(left,$green-and-blue);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+
+}

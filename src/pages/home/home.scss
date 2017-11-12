@@ -1,35 +1,3 @@
-/*
-
-  ios 	    ios Viewing on an iphone, ipad, or ipod will use the iOS styles.
-  android 	md 	Viewing on any android device will use the Material Design styles.
-  windows 	wp 	Viewing on any windows device inside cordova or electron uses the Windows styles.
-  core     	md 	Any platform that doesn’t fit any of the above platforms will use the Material Design styles.
-
-*/
-
 page-home {
 
-  ion-content {
-    @include linear-gradient(left,$facebook-messenger);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
-
 }
-
-/*
-
-.ios, .md, .wp {
-
-  page-sign-up {
-    ion-content {
-      @include linear-gradient(left,$green-and-blue);
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-  }
-}
-
-*/
-

@@ -1,4 +1,4 @@
-@import 'gradients';
+@import "./gradients";
 
 // $color : (#264556, #524548);
 @mixin linear-gradient($direction,$gradients-colorset-name) {

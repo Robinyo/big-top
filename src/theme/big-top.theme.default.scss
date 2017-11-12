@@ -1,3 +1,4 @@
+// @import "./ionic.globals";
 @import "ionic.globals";  // /node_modules/ionic-angular/themes/ionic.globals.scss
 
 // Big Top Default Theme
@@ -16,7 +17,7 @@ $colors: (
 ) !default;
 
 $text-color:                 white !default;  // #000 !default;
-$link-color:                 color($colors, dark) !default;  // color($colors, primary) !default;
+$link-color:                 color($colors, light) !default;  // color($colors, primary) !default;
 $background-color:           #fff !default;
 $subdued-text-color:         #666 !default;
 
@@ -40,3 +41,6 @@ $tabs-tab-color-active:      $link-color !default;
 $list-text-color:            $text-color !default;
 $list-background-color:      $background-color !default;
 $list-border-color:          #c8c7cc !default;
+
+@import "./green-and-blue";
+@import "./facebook-messenger";

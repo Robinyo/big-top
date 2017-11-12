@@ -1,0 +1,10 @@
+.facebook-messenger-theme {
+
+  ion-content {
+    @include linear-gradient(left,$facebook-messenger);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+
+}
