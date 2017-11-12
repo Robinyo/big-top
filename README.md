@@ -86,6 +86,7 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 * Ionic Framework blog: [Build Awesome Desktop Apps with Ionic’s NEW Responsive Grid](http://blog.ionic.io/build-awesome-desktop-apps-with-ionics-new-responsive-grid/)
 * Ionic Framework blog: [New Split Pane and more](http://blog.ionic.io/ionic-2-2-0-is-out/)
 * GitHub: [Ionic App Scripts](https://github.com/driftyco/ionic-app-scripts/)
+* Ionic Framework docs: [iOS - UIWebView and WKWebView](https://ionicframework.com/docs/wkwebview/)
 
 ### Ionic Boilerplates:
 * GitHub: [Ionic Conference App](https://github.com/ionic-team/ionic-conference-app)
