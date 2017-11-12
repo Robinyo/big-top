@@ -19,7 +19,7 @@ export class MyApp {
 
     platform.ready().then(() => {
 
-      // this.logger.info('MyApp initialised');
+      this.logger.info('MyApp initialised');
 
     });
   }
