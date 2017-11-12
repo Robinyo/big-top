@@ -10,13 +10,10 @@ $app-direction: ltr;
 
 // Ionic Themes
 // For more info, please see: https://ionicframework.com/docs/theming/theming-your-app/
-
-// /node_modules/ionic-angular/themes/ionic.theme.default.scss
-// @import "ionic.theme.default";
+// @import "ionic.theme.default";  // /node_modules/ionic-angular/themes/ionic.theme.default.scss
 @import "./big-top.theme.default";
 
-// /node_modules/ionicons
-@import "ionic.ionicons";
+@import "ionic.ionicons";  // /node_modules/ionicons
 
 @import "roboto";
 @import "noto-sans";
