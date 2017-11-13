@@ -9,7 +9,6 @@ import { LoggerService } from '../services/log4ts/logger.service';
 @Component({
   templateUrl: 'app.html'
 })
-
 export class MyApp {
 
   rootPage:any = HomePage;
