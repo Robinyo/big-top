@@ -13,20 +13,20 @@ import { LoggerService } from '../services/log4ts/logger.service';
 export class MyApp {
 
   rootPage:any = HomePage;
-  selectedTheme: String;
+  selectedTheme:String = 'green-and-blue-theme';
 
   constructor(platform: Platform,
               public event: Events,
               private logger: LoggerService) {
 
-    event.subscribe('toggle:theme', () => {
-      this.toggleTheme();
-    });
+    this.logger.info('MyApp initialised');
 
     platform.ready().then(() => {
 
-      this.logger.info('MyApp initialised');
-      this.selectedTheme = 'green-and-blue-theme';
+      event.subscribe('theme:toggle', () => {
+        this.toggleTheme();
+      });
+      
     });
   }
 

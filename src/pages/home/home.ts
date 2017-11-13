@@ -19,6 +19,6 @@ export class HomePage {
 
   toggleTheme() {
     this.logger.info('HomePage: toggleTheme()');
-    this.event.publish('toggle:theme');
+    this.event.publish('theme:toggle');
   }
 }
