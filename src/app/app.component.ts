@@ -14,7 +14,7 @@ export class MyApp {
   rootPage:any = HomePage;
   selectedTheme:String = 'green-and-blue-theme';
 
-  constructor(platform: Platform,
+  constructor(public platform: Platform,
               public event: Events,
               private logger: LoggerService) {
 
