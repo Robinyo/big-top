@@ -26,7 +26,7 @@ export class MyApp {
       event.subscribe('theme:toggle', () => {
         this.toggleTheme();
       });
-      
+
     });
   }
 
