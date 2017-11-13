@@ -6,6 +6,10 @@ The Big Top installer:
 
 <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
 
+Tap the button to switch themes:
+
+<img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/toggle-themes.png">
+
 ## Development
 
 To clone the project:
