@@ -69,6 +69,8 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 ## Blog Posts 
 * Rob Ferguson's blog: [Build a Desktop Application with Ionic 3 and Electron](https://robferguson.org/blog/2017/11/09/build-a-desktop-application-with-ionic-3-and-electron/)
 * Rob Ferguson's blog: [Build a Desktop Application with Ionic 3 and Electron - Part 2](https://robferguson.org/blog/2017/11/10/build-a-desktop-application-with-ionic-3-and-electron-part-2/)
+* Rob Ferguson's blog: [Theming your Ionic 3 App](https://robferguson.org/blog/2017/11/12/theming-your-ionic-3-app/)
+* Rob Ferguson's blog: [Theming your Ionic 3 App - Part 2](https://robferguson.org/blog/2017/11/13/theming-your-ionic-3-app-part-2/)
 
 ### Electron Resources:
 * Electron docs: [Quick Start](https://electron.atom.io/docs/tutorial/quick-start/)
