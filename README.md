@@ -27,6 +27,12 @@ To build the project:
 
 To launch the project:
 
+    ionic serve [--platform=ios | android] [-w chrome | firefox | safari]
+    
+### Electron
+
+To launch the project:
+
 In a terminal run the following command:
 
     ionic serve --no-open
@@ -46,6 +52,8 @@ In another terminal run the following command:
 To build the project:
 
     ionic build --prod
+
+### Electron
     
 To package the application:
 
