@@ -28,6 +28,10 @@ To build the project:
 To launch the project:
 
     ionic serve [--platform=ios | android] [-w chrome | firefox | safari]
+
+For example:
+    
+    ionic serve --platform=ios
     
 ### Electron
 

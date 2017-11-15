@@ -12,7 +12,7 @@ import { LoggerService } from '../services/log4ts/logger.service';
 export class MyApp {
 
   rootPage:any = HomePage;
-  selectedTheme:String = 'green-and-blue-theme';
+  theme:String = 'green-and-blue-theme';
 
   constructor(public platform: Platform,
               public event: Events,
@@ -33,10 +33,10 @@ export class MyApp {
 
     this.logger.info('MyApp: toggleTheme()');
 
-    if (this.selectedTheme === 'facebook-messenger-theme') {
-      this.selectedTheme = 'green-and-blue-theme';
+    if (this.theme === 'facebook-messenger-theme') {
+      this.theme = 'green-and-blue-theme';
     } else {
-      this.selectedTheme = 'facebook-messenger-theme';
+      this.theme = 'facebook-messenger-theme';
     }
   }
 }
