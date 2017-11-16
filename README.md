@@ -1,8 +1,7 @@
 # The Big Top Application
 
 <p align="center">
-  <img width="375" height="667" 
-  src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
 </p>
 
 The Big Top installer:
