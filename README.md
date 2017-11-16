@@ -1,14 +1,13 @@
 # The Big Top Application
 
-<img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/electron-ionic-blank.png">
+<p align="center">
+  <img width="375" height="667" 
+  src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
+</p>
 
 The Big Top installer:
 
 <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
-
-Tap the button to switch themes:
-
-<img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/toggle-themes.png">
 
 ## Development
 

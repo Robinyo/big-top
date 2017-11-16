@@ -137,3 +137,7 @@ Open your browser and navigate to:
     "./src/services/**/*.ts",
     "**/*.spec.ts"
   ]
+
+--
+
+<img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/electron-ionic-blank.png">
