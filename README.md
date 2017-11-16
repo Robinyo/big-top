@@ -32,6 +32,10 @@ To launch the project:
 For example:
     
     ionic serve --platform=ios
+
+You can preview all three supported Mobile platforms side by side:
+
+    ionic serve --lab
     
 ### Electron
 
@@ -64,6 +68,101 @@ To package the application:
     npm run dist
 
 If everything works as expected electron-builder will create a `/dist` directory.
+
+## Build Management
+* [Easy to use environment variables for Ionic 3](https://github.com/gshigeto/ionic-environment-variables)
+* [Ionic CLI - Issue 1205 - Environment variable configuration](https://github.com/ionic-team/ionic-cli/issues/1205)
+
+### Environment Variables
+
+I followed these steps to add support for environment variables.
+
+Update `package.json`:
+```json
+"config": {
+  "ionic_webpack": "./config/webpack.config.js"
+}
+```
+
+Updated `tsconfig.json` in `compilerOptions`:
+```json
+  "compilerOptions": {
+    ...
+    "baseUrl": "./src",
+    "paths": {
+      "@app/env": [
+        "environments/environment"
+      ]
+    }
+  },
+```
+
+Created `config/webpack.config.js`:
+```javascript
+var chalk = require("chalk");
+var fs = require('fs');
+var path = require('path');
+var useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
+
+var env = process.env.IONIC_ENV;
+
+if (env === 'prod' || env === 'dev') {
+  useDefaultConfig[env].resolve.alias = {
+    "@app/env": path.resolve(environmentPath())
+  };
+} else {
+  // Default to dev config
+  useDefaultConfig[env] = useDefaultConfig.dev;
+  useDefaultConfig[env].resolve.alias = {
+    "@app/env": path.resolve(environmentPath())
+  };
+}
+
+function environmentPath() {
+  var filePath = './src/environments/environment' + (env === 'prod' ? '' : '.' + env) + '.ts';
+  if (!fs.existsSync(filePath)) {
+    console.log(chalk.red('\n' + filePath + ' does not exist!'));
+  } else {
+    return filePath;
+  }
+}
+
+module.exports = function () {
+  return useDefaultConfig;
+};
+```
+
+Created `src/environments/environment.ts` that will be used for the **Production** environment:
+```typescript
+export const ENV = {
+  production: true,
+  isDebugMode: false
+};
+```
+
+Created `src/environments/environment.dev.ts` that will be used for the **Development** environment:
+```typescript
+export const ENV = {
+  production: false,
+  isDebugMode: true
+};
+```
+Import your environment variables:
+```typescript
+import { ENV } from '@app/env'
+```
+**Note:** Remember to ignore your environment files in your `.gitignore`
+```
+# Environment Variables
+**/environment.*
+!**/environment.model.ts
+```
+
+## Simple Logging Service
+
+* [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
+
+Take a look at the .ts files in the `src/services/log4ts` directory.
 
 ## Scaffolding
 

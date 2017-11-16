@@ -57,6 +57,9 @@
     "typescript": "2.3.4",
     "wait-on": "^2.0.2"
   },
+  "config": {
+    "ionic_webpack": "./config/webpack.config.js"
+  },
   "main": "electron/main.js",
   "build": {
     "appId": "org.robferguson.BigTop",

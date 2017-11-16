@@ -1,11 +1,11 @@
-// import { ENV } from '@app/env';
+import { ENV } from '@app/env';
 
 import { Injectable } from '@angular/core';
 
 import { Logger } from './logger';
 
-// export let isDebugMode = ENV.isDebugMode;
-export let isDebugMode = true;
+export let isDebugMode = ENV.isDebugMode;
+// export let isDebugMode = true;
 
 const noop = (): any => undefined;
 

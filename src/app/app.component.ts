@@ -12,7 +12,7 @@ import { LoggerService } from '../services/log4ts/logger.service';
 export class MyApp {
 
   rootPage:any = HomePage;
-  theme:String = 'green-and-blue-theme';
+  theme:String = 'facebook-messenger-theme';
 
   constructor(public platform: Platform,
               public event: Events,
