@@ -21,6 +21,7 @@ ion-menu {
     color: white;
   }
 }
+
 .green-and-blue-theme {
 
   ion-content {
@@ -28,6 +29,11 @@ ion-menu {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+  }
+
+  // Don't UPPERCASE .buttons
+  button {
+    text-transform: none;
   }
 
 }

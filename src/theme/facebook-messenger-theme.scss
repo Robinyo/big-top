@@ -30,4 +30,9 @@ ion-menu {
     -moz-background-size: cover;
     background-size: cover;
   }
+
+  // Don't UPPERCASE .buttons
+  button {
+    text-transform: none;
+  }
 }
