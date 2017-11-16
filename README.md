@@ -1,6 +1,10 @@
 # The Big Top App
 
 <p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/introduction-page.png">
+</p>
+
+<p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
 </p>
 
