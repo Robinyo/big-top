@@ -4,7 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+// Welcome pages
+import { IntroductionPage } from '../pages/introduction/introduction';
 
 // Logging Service
 import { LoggerService } from '../services/log4ts/logger.service';
@@ -13,7 +15,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    IntroductionPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    IntroductionPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},

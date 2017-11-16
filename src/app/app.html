@@ -1,1 +1,71 @@
+<ion-split-pane when="lg">
+
+  <ion-menu [content]="content">
+
+    <ion-header>
+      <ion-toolbar transparent>
+      </ion-toolbar>
+    </ion-header>
+
+    <!--
+
+    <ion-header>
+      <ion-toolbar transparent>
+        <ion-title>Big Top</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    -->
+
+    <ion-content>
+      <ion-list no-lines>
+        <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
+          <ion-icon name="{{p.icon}}" item-start color="light"></ion-icon>
+          {{p.title}}
+          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+        </button>
+
+        <ion-item-divider color="light">App Settings</ion-item-divider>
+        <button menuClose ion-item detail-none (click)="toggleTheme()">
+          <ion-icon name="color-palette" item-start color="light"></ion-icon>
+          Toggle Theme
+          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+        </button>
+
+        <ion-item-divider color="light">Legal</ion-item-divider>
+        <button menuClose ion-item detail-none>
+          <ion-icon name="document" item-start color="light"></ion-icon>
+          Terms of Use
+          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+        </button>
+
+        <button menuClose ion-item detail-none>
+          <ion-icon name="body" item-start color="light"></ion-icon>
+          Privacy Policy
+          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+        </button>
+
+        <button menuClose ion-item detail-none>
+          <ion-icon name="ionic" item-start color="light"></ion-icon>
+          About Big Top
+          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+        </button>
+
+      </ion-list>
+
+    </ion-content>
+
+  </ion-menu>
+
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav main [root]="rootPage" [class]="theme" #content swipeBackEnabled="false"></ion-nav>
+
+</ion-split-pane>
+
+<!--
+
 <ion-nav [root]="rootPage" [class]="theme"></ion-nav>
+
+-->
+
+

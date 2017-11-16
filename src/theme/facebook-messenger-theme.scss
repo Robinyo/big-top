@@ -1,3 +1,27 @@
+ion-menu {
+
+  ion-content {
+    @include linear-gradient(left,$facebook-messenger);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    font-size: 1.8rem;
+
+    div.scroll-content {
+      color: white;
+
+      ion-list .item {
+        color: white;
+        background: transparent;
+      }
+    }
+  }
+
+  .bar-buttons, .toolbar-title {
+    color: white;
+  }
+}
+
 .facebook-messenger-theme {
 
   ion-content {
@@ -6,5 +30,4 @@
     -moz-background-size: cover;
     background-size: cover;
   }
-
 }

@@ -1,25 +1,41 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild, OnInit } from '@angular/core';
 
-/**
- * Generated class for the IntroductionPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
+
+import { LoggerService } from '../../services/log4ts/logger.service';
 
 @IonicPage()
 @Component({
   selector: 'page-introduction',
   templateUrl: 'introduction.html',
 })
-export class IntroductionPage {
+export class IntroductionPage implements OnInit {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild(Slides) slides: Slides;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private logger: LoggerService) {
+
+    this.logger.info('IntroductionPage initialised');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad IntroductionPage');
+  ngOnInit() {
+
+    this.logger.info('IntroductionPage: ngOnInit()');
+
+    this.slides.spaceBetween = 100;
+    // this.slides.autoplay = 2000;
+    this.slides.pager = true;
+    this.slides.paginationType = 'bullets';  // 'bullets', 'fraction' or 'progress';
   }
 
+  slideChanged() {
+    // let currentIndex = this.slides.getActiveIndex();
+    // this.logger.info('Current index is ' + currentIndex);
+  }
+
+  nextPage() {
+    this.logger.info('IntroductionPage: nextPage()');
+    // this.navCtrl.push(SignUpPage);
+  }
 }
