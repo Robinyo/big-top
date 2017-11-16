@@ -57,6 +57,10 @@ For example:
 You can preview all three supported Mobile platforms side by side:
 
     ionic serve --lab
+
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab.png">
+</p>
     
 ### Electron
 
