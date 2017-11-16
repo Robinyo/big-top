@@ -1,5 +1,8 @@
 # The Big Top App
 
+A sample app that use using **one** codebase for Mobile (iOS, Android and Windows Phone) and Desktop (masOS, Linux 
+and Windows) platforms.
+
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/introduction-page.png">
 </p>
