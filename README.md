@@ -1,6 +1,6 @@
 # The Big Top App
 
-A sample app that use using **one** codebase for Mobile (iOS, Android and Windows Phone) and Desktop (masOS, Linux 
+A sample app that uses **one** codebase for Mobile (iOS, Android and Windows Phone) and Desktop (masOS, Linux 
 and Windows) platforms.
 
 <p align="center">
