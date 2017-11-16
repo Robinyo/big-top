@@ -8,6 +8,11 @@ and Windows) platforms.
 </p>
 
 <p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/settings-page.png">
+</p>
+
+
+<p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
 </p>
 
