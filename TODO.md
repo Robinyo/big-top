@@ -141,3 +141,7 @@ Open your browser and navigate to:
 --
 
 <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/electron-ionic-blank.png">
+
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
+</p>

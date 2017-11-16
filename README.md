@@ -3,20 +3,23 @@
 A sample app that uses **one** codebase for Mobile (iOS, Android and Windows Phone) and Desktop (masOS, Linux 
 and Windows) platforms.
 
+If the screen's min-width is less than 992px ('xs', 'sm', 'md'):
+
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/introduction-page.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/mobile.png">
 </p>
 
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/settings-page.png">
 </p>
 
+If the screen's min-width is 992px ('lg'):
 
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/tablet.png">
 </p>
 
-The Big Top installer:
+The Desktop Edition installer running on macOS Sierra:
 
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
