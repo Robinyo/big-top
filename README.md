@@ -1,4 +1,4 @@
-# The Big Top Application
+# The Big Top App
 
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
@@ -6,7 +6,9 @@
 
 The Big Top installer:
 
-<img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
+</p>
 
 ## Development
 
