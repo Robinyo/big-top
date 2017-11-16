@@ -70,9 +70,13 @@ In a terminal run the following command:
 
     ionic serve --no-open
     
-If you want to set the 'ELECTRON_START_URL' environment variable:
+If you want to set the 'ELECTRON_START_URL' environment variable on macOS or Linux:
     
     ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
+
+On Windows use:
+
+    set ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
 
 In another terminal run the following command:
 
