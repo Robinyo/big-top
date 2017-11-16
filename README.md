@@ -19,7 +19,7 @@ If the screen's min-width is 992px ('lg'):
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/tablet.png">
 </p>
 
-The Desktop Edition installer running on macOS Sierra:
+The Desktop Edition's installer running on macOS Sierra:
 
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
