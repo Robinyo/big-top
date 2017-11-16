@@ -87,7 +87,7 @@ Update `package.json`:
 Updated `tsconfig.json` in `compilerOptions`:
 ```json
   "compilerOptions": {
-    ...
+    "target": "es5",
     "baseUrl": "./src",
     "paths": {
       "@app/env": [
