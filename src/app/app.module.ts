@@ -11,7 +11,7 @@ import { IntroductionPage } from '../pages/introduction/introduction';
 // Account pages
 import { SignInPage } from '../pages/sign-in/sign-in';
 
-// Logging Service
+// Logging Services
 import { LoggerService } from '../services/log4ts/logger.service';
 import { ConsoleLoggerService } from '../services/log4ts/console-logger.service';
 

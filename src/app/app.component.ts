@@ -39,7 +39,7 @@ export class MyApp {
   ];
 
   accountPages: PageInterface[] = [
-    { title: 'Sign In', name: 'SignInPage', component: SignInPage, icon: 'log-in' }
+    // { title: 'Sign In', name: 'SignInPage', component: SignInPage, icon: 'log-in' }
     // { title: 'My Account', name: 'IntroductionPage', component: IntroductionPage, icon: 'person' },
     // { title: 'Register', name: 'IntroductionPage', component: IntroductionPage, icon: 'person-add' }
   ];
@@ -62,7 +62,6 @@ export class MyApp {
               public event: Events,
               private logger: LoggerService) {
 
-
     this.initializeApp();
   }
 
@@ -75,8 +74,13 @@ export class MyApp {
     });
   }
 
-  openPage(page) {
+  openPage(page: any) {
     this.nav.setRoot(page.component);
+  }
+
+  signIn() {
+    // this.openPage(SignInPage, false);
+    this.nav.push(SignInPage);
   }
 
   toggleTheme() {
