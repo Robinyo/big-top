@@ -33,9 +33,9 @@
   </ion-row>
 
   <!--
-  <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+  <form [form]="form" (ngSubmit)="onSubmit(form.value)">
   -->
-  <form [formGroup]="formGroup">
+  <form [formGroup]="form">
     <!--
     <ion-input doesn't support autofocus
     -->
@@ -44,6 +44,14 @@
       <ion-input formControlName="email" type="email"></ion-input>
     </ion-item>
 
+    <div *ngIf="!form.controls.email.valid  && (form.controls.email.dirty || submitted)">Please enter a valid email.</div>
+
+    <!--
+    <ion-item *ngIf="!form.controls.email.valid  && (form.controls.email.dirty || submitted)">
+      <p>Please enter a valid email.</p>
+    </ion-item>
+    -->
+
     <ion-item>
       <ion-label floating>Password</ion-label>
       <ion-input formControlName="password" type="password"></ion-input>
@@ -51,7 +59,7 @@
 
     <ion-row style="padding-top: 40px">
       <ion-col text-center>
-        <button ion-button block color="secondary" (click)="nextPage()">
+        <button ion-button block color="secondary" (click)="signIn()">
           Sign in
         </button>
       </ion-col>
@@ -82,7 +90,7 @@
     </ion-buttons>
 
     <ion-buttons end>
-      <button ion-button color="light" clear [disabled]="!formGroup.valid" (click)="nextPage()">
+      <button ion-button color="light" clear [disabled]="!form.valid" (click)="nextPage()">
         Next &nbsp;
         <ion-icon name="arrow-forward" style="zoom: 2.0;"></ion-icon>
       </button>

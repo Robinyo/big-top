@@ -14,7 +14,7 @@ import { LoggerService } from '../services/log4ts/logger.service';
 import { ENV } from '@app/env';
 let isDebugMode = ENV.isDebugMode;
 
-export interface PageInterface {
+interface PageInterface {
   title: string;
   name: string;
   component: any;
