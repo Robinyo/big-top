@@ -238,11 +238,11 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 * GitHub: [Ionic App Scripts](https://github.com/driftyco/ionic-app-scripts/)
 * Ionic Framework docs: [iOS - UIWebView and WKWebView](https://ionicframework.com/docs/wkwebview/)
 
-### Ionic Boilerplates
+### Ionic Boilerplates that use the Ionic CLI
 * GitHub: [Ionic Conference App](https://github.com/ionic-team/ionic-conference-app)
 * GitHub: [Ionic Conference App with JWT authentication](https://github.com/ddellamico/ionic2-conference-app)
 * GitHub: [Ionic Boilerplate](https://github.com/marcoturi/ionic-boilerplate)
 
-### Ionic Boilerplates using Angular CLI
+### Ionic Boilerplates that use the Angular CLI
 * GitHub: [generator-ngx-rocket](https://github.com/ngx-rocket/generator-ngx-rocket)
 
