@@ -13,8 +13,6 @@ import { LoggerService } from '../services/log4ts/logger.service';
 import { ENV } from '@app/env';
 let isDebugMode = ENV.isDebugMode;
 
-const noop = (): any => undefined;
-
 export interface PageInterface {
   title: string;
   name: string;
@@ -112,8 +110,6 @@ export class MyApp {
       } else if (this.platform.is('windows')) {
         this.logger.info('The Platform is Windows');
       }
-    } else {
-      return noop;
     }
   }
 
