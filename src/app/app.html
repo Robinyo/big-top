@@ -19,36 +19,46 @@
 
     <ion-content>
       <ion-list no-lines>
-        <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
-          <ion-icon name="{{p.icon}}" item-start color="light"></ion-icon>
-          {{p.title}}
-          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+
+        <ion-item-divider color="light">
+          Navigate
+        </ion-item-divider>
+        <button ion-item menuClose detail-none *ngFor="let page of navigationPages" (click)="openPage(page)">
+          <ion-icon item-start [name]="page.icon" color="light"></ion-icon>
+          {{page.title}}
+          <ion-icon item-end name="arrow-forward" color="light"></ion-icon>
         </button>
 
-        <ion-item-divider color="light">App Settings</ion-item-divider>
-        <button menuClose ion-item detail-none (click)="toggleTheme()">
-          <ion-icon name="color-palette" item-start color="light"></ion-icon>
+        <ion-item-divider color="light">
+          Account
+        </ion-item-divider>
+        <button ion-item menuClose detail-none *ngFor="let page of accountPages" (click)="openPage(page)">
+          <ion-icon item-start [name]="page.icon" color="light"></ion-icon>
+          {{page.title}}
+          <ion-icon item-end name="arrow-forward" color="light"></ion-icon>
+        </button>
+
+        <ion-item-divider color="light">
+          Settings
+        </ion-item-divider>
+        <button ion-item menuClose detail-none *ngFor="let page of settingsPages" (click)="openPage(page)">
+          <ion-icon item-start [name]="page.icon" color="light"></ion-icon>
+          {{page.title}}
+          <ion-icon item-end name="arrow-forward" color="light"></ion-icon>
+        </button>
+        <button ion-item menuClose detail-none (click)="toggleTheme()">
+          <ion-icon item-start name="color-palette" color="light"></ion-icon>
           Toggle Theme
-          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+          <ion-icon item-end name="arrow-forward" color="light"></ion-icon>
         </button>
 
-        <ion-item-divider color="light">Legal</ion-item-divider>
-        <button menuClose ion-item detail-none>
-          <ion-icon name="document" item-start color="light"></ion-icon>
-          Terms of Use
-          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
-        </button>
-
-        <button menuClose ion-item detail-none>
-          <ion-icon name="body" item-start color="light"></ion-icon>
-          Privacy Policy
-          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
-        </button>
-
-        <button menuClose ion-item detail-none>
-          <ion-icon name="ionic" item-start color="light"></ion-icon>
-          About Big Top
-          <ion-icon name="arrow-forward" item-end color="light"></ion-icon>
+        <ion-item-divider color="light">
+          Legal
+        </ion-item-divider>
+        <button ion-item menuClose detail-none *ngFor="let page of legalPages" (click)="openPage(page)">
+          <ion-icon item-start [name]="page.icon" color="light"></ion-icon>
+          {{page.title}}
+          <ion-icon item-end name="arrow-forward" color="light"></ion-icon>
         </button>
 
       </ion-list>
@@ -58,7 +68,7 @@
   </ion-menu>
 
   <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-  <ion-nav main [root]="rootPage" [class]="theme" #content swipeBackEnabled="false"></ion-nav>
+  <ion-nav main [root]="rootPage" #content swipeBackEnabled="false" [class]="theme"></ion-nav>
 
 </ion-split-pane>
 

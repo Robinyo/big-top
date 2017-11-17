@@ -15,6 +15,17 @@ let isDebugMode = ENV.isDebugMode;
 
 const noop = (): any => undefined;
 
+export interface PageInterface {
+  title: string;
+  name: string;
+  component: any;
+  icon: string;
+  logsOut?: boolean;
+  index?: number;
+  tabName?: string;
+  tabComponent?: any;
+}
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -23,8 +34,28 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
   @ViewChild(Content) content: Content;
 
+  navigationPages: PageInterface[] = [
+    { title: 'Discover Events', name: 'IntroductionPage', component: IntroductionPage, icon: 'beer' }
+    // { title: 'Discover Venues', name: 'IntroductionPage', component: IntroductionPage, icon: 'person' },
+  ];
+
+  accountPages: PageInterface[] = [
+    { title: 'Sign In', name: 'IntroductionPage', component: IntroductionPage, icon: 'log-in' }
+    // { title: 'My Account', name: 'IntroductionPage', component: IntroductionPage, icon: 'person' },
+    // { title: 'Register', name: 'IntroductionPage', component: IntroductionPage, icon: 'person-add' }
+  ];
+
+  settingsPages: PageInterface[] = [
+    { title: 'Connected Services', name: 'IntroductionPage', component: IntroductionPage, icon: 'bluetooth' }
+  ];
+
+  legalPages: PageInterface[] = [
+    { title: 'Terms of Use', name: 'IntroductionPage', component: IntroductionPage, icon: 'document' },
+    { title: 'Privacy Policy', name: 'IntroductionPage', component: IntroductionPage, icon: 'body' },
+    { title: 'About Big Top', name: 'IntroductionPage', component: IntroductionPage, icon: 'information-circle' }
+  ];
+
   rootPage:any = IntroductionPage;
-  pages: Array<{title: string, component: any, icon: string}>;
 
   theme:String = 'facebook-messenger-theme';
 
@@ -32,9 +63,6 @@ export class MyApp {
               public event: Events,
               private logger: LoggerService) {
 
-    this.pages = [
-      { title: 'My Account', component: IntroductionPage, icon: 'person' }
-    ];
 
     this.initializeApp();
   }
@@ -44,7 +72,7 @@ export class MyApp {
     this.getPlatformInfo();
 
     this.platform.ready().then(() => {
-      this.setDisableScroll(true);
+      // this.setDisableScroll(true);
     });
   }
 
