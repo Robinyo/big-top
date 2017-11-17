@@ -53,8 +53,14 @@ export class SignInPage {
     this.logger.info('SignInPage - Email: ' + this.form.controls['email'].value);
     this.logger.info('SignInPage - Password: ' + this.form.controls['password'].value);
 
-    if (this.form.valid) {  // if (this.form.dirty && this.form.valid) {
+    if (this.form.valid) {
       this.navCtrl.pop();
     }
   }
 }
+
+/*
+
+ if (this.form.dirty && this.form.valid) {
+
+*/

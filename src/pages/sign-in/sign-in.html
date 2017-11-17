@@ -29,20 +29,20 @@
       <ion-input formControlName="email" type="email"></ion-input>
     </ion-item>
 
-    <div *ngIf="!form.controls.email.valid  && (form.controls.email.dirty || submitted)">Please enter a valid email.</div>
-
-    <!--
-    <ion-item *ngIf="!form.controls.email.valid  && (form.controls.email.dirty || submitted)">
-      <p>Please enter a valid email.</p>
-    </ion-item>
-    -->
+    <div *ngIf="!form.controls.email.valid && (form.controls.email.dirty || submitted)">
+      Please enter a valid email.
+    </div>
 
     <ion-item>
       <ion-label floating>Password</ion-label>
       <ion-input formControlName="password" type="password"></ion-input>
     </ion-item>
 
-    <ion-row style="padding-top: 40px">
+    <div *ngIf="!form.controls.email.password && (form.controls.password.dirty || submitted)">
+      Please enter a valid password.
+    </div>
+
+    <ion-row class="sign-in-button-row">
       <ion-col text-center>
         <button ion-button block color="secondary" [disabled]="!form.valid" (click)="signIn()">
           Sign in
@@ -65,3 +65,11 @@
 <ion-footer>
 
 </ion-footer>
+
+<!--
+
+<div *ngIf="!form.controls.email.valid && (form.controls.email.dirty || submitted)">
+
+<div *ngIf="!form.controls.email.password && (form.controls.password.dirty || submitted)">
+
+-->
