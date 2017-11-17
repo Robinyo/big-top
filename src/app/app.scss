@@ -11,3 +11,35 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+h1 {
+  font-size: 3.0rem;
+  margin-top: 4px;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 2.2rem;
+}
+
+.item-ios {
+  background-color: transparent;
+}
+.item-md {
+  background-color: transparent;
+}
+.item-wp {
+  background-color: transparent;
+}
+
+.label-md[floating] {
+  color: white;
+}
+
+// Don't UPPERCASE .buttons
+button {
+  text-transform: none;
+}

@@ -13,6 +13,10 @@ If the screen's min-width is less than 992px ('xs', 'sm', 'md'):
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/settings-page.png">
 </p>
 
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/sign-in-page.png">
+</p>
+
 If the screen's min-width is 992px ('lg'):
 
 <p align="center">

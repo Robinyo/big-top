@@ -8,6 +8,9 @@ import { MyApp } from './app.component';
 // Welcome pages
 import { IntroductionPage } from '../pages/introduction/introduction';
 
+// Account pages
+import { SignInPage } from '../pages/sign-in/sign-in';
+
 // Logging Service
 import { LoggerService } from '../services/log4ts/logger.service';
 import { ConsoleLoggerService } from '../services/log4ts/console-logger.service';
@@ -15,7 +18,8 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
 @NgModule({
   declarations: [
     MyApp,
-    IntroductionPage
+    IntroductionPage,
+    SignInPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,8 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    IntroductionPage
+    IntroductionPage,
+    SignInPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},

@@ -1,0 +1,94 @@
+<ion-header>
+
+  <!--
+  <ion-navbar transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+  -->
+
+</ion-header>
+
+<ion-content padding>
+
+  <!-- Sign in -->
+
+  <ion-row style="padding-top: 44px; padding-bottom: 44px;">
+    <ion-col text-center>
+      <ion-icon name="ionic" style="zoom: 4.0;"></ion-icon>
+      <!--
+      <h2 style="padding-top: 24px">
+        Sign in
+      </h2>
+      -->
+
+      <!-- Benefit tag line (e.g., like a call to action)
+      <p>
+        Find unique local experiences and events just for you
+      </p>
+      -->
+
+    </ion-col>
+  </ion-row>
+
+  <!--
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+  -->
+  <form [formGroup]="formGroup">
+    <!--
+    <ion-input doesn't support autofocus
+    -->
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+
+    <ion-row style="padding-top: 40px">
+      <ion-col text-center>
+        <button ion-button block color="secondary" (click)="nextPage()">
+          Sign in
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col text-center>
+        <button ion-button color="light" clear>
+          Forgot your password?
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </form>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar transparent>
+
+    <!--
+
+    <ion-buttons start>
+      <button ion-button color="light" clear (click)="previousPage()">
+        <ion-icon name="arrow-back" style="zoom: 2.0;"></ion-icon>
+        &nbsp; Previous
+      </button>
+    </ion-buttons>
+
+    <ion-buttons end>
+      <button ion-button color="light" clear [disabled]="!formGroup.valid" (click)="nextPage()">
+        Next &nbsp;
+        <ion-icon name="arrow-forward" style="zoom: 2.0;"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    -->
+
+  </ion-toolbar>
+</ion-footer>

@@ -4,6 +4,8 @@ import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
 import { LoggerService } from '../../services/log4ts/logger.service';
 
+import { SignInPage } from '../../pages/sign-in/sign-in';
+
 @IonicPage()
 @Component({
   selector: 'page-introduction',
@@ -12,6 +14,8 @@ import { LoggerService } from '../../services/log4ts/logger.service';
 export class IntroductionPage implements OnInit {
 
   @ViewChild(Slides) slides: Slides;
+
+  component = SignInPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
               private logger: LoggerService) {
@@ -36,6 +40,6 @@ export class IntroductionPage implements OnInit {
 
   nextPage() {
     this.logger.info('IntroductionPage: nextPage()');
-    // this.navCtrl.push(SignUpPage);
+    this.navCtrl.push(this.component);
   }
 }

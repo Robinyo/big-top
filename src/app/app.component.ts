@@ -7,6 +7,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Content, Events, Nav, Platform } from 'ionic-angular';
 
 import { IntroductionPage } from '../pages/introduction/introduction';
+import { SignInPage } from '../pages/sign-in/sign-in';
 
 import { LoggerService } from '../services/log4ts/logger.service';
 
@@ -38,7 +39,7 @@ export class MyApp {
   ];
 
   accountPages: PageInterface[] = [
-    { title: 'Sign In', name: 'IntroductionPage', component: IntroductionPage, icon: 'log-in' }
+    { title: 'Sign In', name: 'SignInPage', component: SignInPage, icon: 'log-in' }
     // { title: 'My Account', name: 'IntroductionPage', component: IntroductionPage, icon: 'person' },
     // { title: 'Register', name: 'IntroductionPage', component: IntroductionPage, icon: 'person-add' }
   ];
