@@ -118,6 +118,8 @@ export class MyApp {
     }
   }
 
+  // no-bounce
+
   /**
    * @param {boolean} disable  Show/Hide the vertical scrollbar
    *
