@@ -6,19 +6,19 @@ and Windows) platforms.
 If the screen's min-width is less than 992px ('xs', 'sm', 'md'):
 
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/mobile.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/ios/introduction-page.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/settings-page.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/ios/settings-page.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/sign-in-page.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/ios/sign-in-page.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/events-page.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/ios/events-page.png">
 </p>
 
 If the screen's min-width is 992px ('lg'):
