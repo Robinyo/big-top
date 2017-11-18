@@ -38,7 +38,7 @@
       <ion-input formControlName="password" type="password"></ion-input>
     </ion-item>
 
-    <div *ngIf="!form.controls.email.password && (form.controls.password.dirty || submitted)">
+    <div *ngIf="!form.controls.password.valid && (form.controls.password.dirty || submitted)">
       Please enter a valid password.
     </div>
 
