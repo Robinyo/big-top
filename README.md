@@ -56,18 +56,32 @@ To build the project:
 
 To launch the project:
 
-    ionic serve [--platform=ios | android] [-w chrome | firefox | safari]
+    ionic serve [--platform=ios | android] [--browser chrome | firefox | safari]
 
-For example:
+Some examples:
     
     ionic serve --platform=ios
+    ionic serve --platform=android
+    ionic serve --platform=windows
+    
+    ionic serve --platform=ios --browser safari
+    ionic serve --platform=android --browser chrome
+    ionic serve --platform=windows --browser firefox
 
 You can preview all three supported Mobile platforms side by side:
 
     ionic serve --lab
 
+For example, the 'Sign in' page:
+
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab.png">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-sign-in-page.png">
+</p>
+
+The 'Events' page:
+
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-events-page.png">
 </p>
     
 ### Electron

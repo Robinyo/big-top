@@ -12,36 +12,68 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-h1 {
-  font-size: 3.0rem;
-  margin-top: 4px;
-}
+/*
+  ios 	    ios Viewing on an iphone, ipad, or ipod will use the iOS styles.
+  android 	md 	Viewing on any android device will use the Material Design styles.
+  windows 	wp 	Viewing on any windows device inside cordova or electron uses the Windows styles.
+  core     	md 	Any platform that doesn’t fit any of the above platforms will use the Material Design styles.
+ */
 
-h2 {
-  font-size: 2.4rem;
-}
+.ios, .md, .wp {
 
-p {
-  font-size: 2.2rem;
-}
+  h1 {
+    font-size: 3.0rem;
+    margin-top: 4px;
+  }
 
-.item-ios {
-  background-color: transparent;
-}
-.item-md {
-  background-color: transparent;
-}
-.item-wp {
-  background-color: transparent;
-}
+  h2 {
+    font-size: 2.4rem;
+  }
 
-.label-md[floating] {
-  color: white;
-}
+  p {
+    font-size: 2.2rem;
+  }
 
-// Don't UPPERCASE .buttons
-button {
-  text-transform: none;
+  .item {
+    background-color: transparent;
+  }
+
+  // Don't UPPERCASE .buttons
+  button {
+    text-transform: none;
+  }
+
+  /*
+  .label[floating] {
+    color: white;
+  }
+  */
+
+  .tabs .tabbar {
+    // background: white;
+    background-color: transparent;
+  }
+
+  .tabs .tab-button-icon {
+    color: #8c8c8c;
+  }
+
+  .tabs .tab-button[aria-selected=true] .tab-button-icon {
+    // color: #488aff;
+    color: white;
+  }
+
+  .tabs .tab-button {
+    color: #8c8c8c;
+  }
+
+  .tabs .tab-button:hover:not(.disable-hover),
+  .tabs .tab-button[aria-selected=true] {
+    // color: #488aff;
+    color: white;
+  }
 }
 
 // https://github.com/ionic-team/ionic-preview-app/blob/master/src/theme/variables.scss
+
+

@@ -28,7 +28,7 @@ interface PageInterface {
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp {
+export class BigTopApp {
 
   @ViewChild(Nav) nav: Nav;
   @ViewChild(Content) content: Content;
@@ -70,7 +70,7 @@ export class MyApp {
     this.getPlatformInfo();
 
     this.platform.ready().then(() => {
-      // this.setDisableScroll(true);
+      this.logger.info('BigTopApp: platform.ready()');
     });
   }
 
@@ -79,13 +79,12 @@ export class MyApp {
   }
 
   signIn() {
-    // this.openPage(SignInPage, false);
     this.nav.push(SignInPage);
   }
 
   toggleTheme() {
 
-    this.logger.info('MyApp: toggleTheme()');
+    this.logger.info('BigTopApp: toggleTheme()');
 
     if (this.theme === 'facebook-messenger-theme') {
       this.theme = 'green-and-blue-theme';

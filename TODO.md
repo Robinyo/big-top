@@ -145,3 +145,44 @@ Open your browser and navigate to:
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/home-page.png">
 </p>
+
+/*
+
+/// @prop - Text color of the active tab button
+$tabs-ios-tab-text-color-active:    $tabs-ios-tab-color-active !default;
+
+/// @prop - Icon color of the inactive tab button
+$tabs-ios-tab-icon-color:           $tabs-ios-tab-color-inactive !default;
+
+/// @prop - Icon color of the active tab button
+$tabs-ios-tab-icon-color-active:    $tabs-ios-tab-color-active !default;
+
+  //
+  // iOS
+  //
+
+  .tabs-ios .tabbar {
+    // background: white;
+    background-color: transparent;
+  }
+
+  .tabs-ios .tab-button-icon {
+    color: #8c8c8c;
+  }
+
+  .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    // color: #488aff;
+    color: white;
+  }
+
+  .tabs-ios .tab-button {
+    color: #8c8c8c;
+  }
+
+  .tabs-ios .tab-button:hover:not(.disable-hover),
+  .tabs-ios .tab-button[aria-selected=true] {
+    // color: #488aff;
+    color: white;
+  }
+
+*/

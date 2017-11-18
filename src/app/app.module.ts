@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
-import { MyApp } from './app.component';
+import { BigTopApp } from './app.component';
 
 // Welcome pages
 import { IntroductionPage } from '../pages/introduction/introduction';
@@ -22,7 +22,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
 
 @NgModule({
   declarations: [
-    MyApp,
+    BigTopApp,
     IntroductionPage,
     SignInPage,
     TabsPage,
@@ -32,7 +32,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   imports: [
     BrowserModule,
     // HttpModule,
-    IonicModule.forRoot(MyApp, {}, {
+    IonicModule.forRoot(BigTopApp, {}, {
       links: [
         { component: IntroductionPage, name: 'Introduction', segment: 'introduction' },
         { component: SignInPage, name: 'SignInPage', segment: 'sign-in' },
@@ -45,7 +45,7 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    BigTopApp,
     IntroductionPage,
     SignInPage,
     TabsPage,
