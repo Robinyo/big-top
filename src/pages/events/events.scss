@@ -41,39 +41,15 @@ page-events {
 
 /*
 
-/// @prop - Text color of the active tab button
-$tabs-ios-tab-text-color-active:    $tabs-ios-tab-color-active !default;
-
-/// @prop - Icon color of the inactive tab button
-$tabs-ios-tab-icon-color:           $tabs-ios-tab-color-inactive !default;
-
-/// @prop - Icon color of the active tab button
-$tabs-ios-tab-icon-color-active:    $tabs-ios-tab-color-active !default;
-
-
   ion-content {
     div.scroll-content {
-      // background-color: lightgray;
+      background-color: lightgray;
     }
   }
 
-  .bar-buttons, .toolbar-title {
+  .bar-buttons {
     // color: black;
     color: white;
   }
-
-  ion-content {
-    background-color: white;
-  }
-
-
-    div.scroll-content {
-      background-color: white;
-
-      .ion-card {
-        color: black;
-      }
-    }
-
 
 */

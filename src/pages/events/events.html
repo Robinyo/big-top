@@ -24,145 +24,44 @@
 
 <ion-content class="cards-bg">
 
-  <ion-card>
+  <div *ngFor="let card of cards">
 
-    <img src="../../assets/imgs/events/innovation-showcase.png"/>
+    <ion-card>
 
-    <div class="fab-container">
-      <ion-fab bottom right edge>
-        <button ion-fab mini color="light">
-          <ion-icon name="ios-open-outline"></ion-icon>
-        </button>
-      </ion-fab>
-    </div>
+      <img src="{{ '../../assets/imgs/events/' + card.img }}"/>
 
-    <ion-card-content>
-      <ion-row no-padding>
+      <div class="fab-container">
+        <ion-fab bottom right edge>
+          <button ion-fab mini color="light" (click)="goToEvent(card)">
+            <ion-icon name="ios-open-outline"></ion-icon>
+          </button>
+        </ion-fab>
+      </div>
 
-        <ion-col col-3 text-center>
-          <p class="month">
-            DEC
-          </p>
-          <p class="day">
-            7
-          </p>
-        </ion-col>
-        <ion-col class="event-name">
-          Innovation Showcase 2017
-          <p class="event-location">
-            Canberra Fitters Workshop
-          </p>
-        </ion-col>
+      <ion-card-content>
+        <ion-row no-padding>
 
-      </ion-row>
-    </ion-card-content>
+          <ion-col col-3 text-center>
+            <p class="month">
+              {{ card.month }}
+            </p>
+            <p class="day">
+              {{ card.day }}
+            </p>
+          </ion-col>
+          <ion-col class="event-name">
+            {{ card.name }}
+            <p class="event-location">
+              {{ card.location }}
+            </p>
+          </ion-col>
 
-  </ion-card>
+        </ion-row>
+      </ion-card-content>
 
-  <ion-card>
+    </ion-card>
 
-    <img src="../../assets/imgs/events/heritage-tours.png"/>
-
-    <div class="fab-container">
-      <ion-fab bottom right edge>
-        <button ion-fab mini color="light">
-          <ion-icon name="ios-open-outline"></ion-icon>
-        </button>
-      </ion-fab>
-    </div>
-
-    <ion-card-content>
-      <ion-row no-padding>
-
-        <ion-col col-3 text-center>
-          <p class="month">
-            NOV
-          </p>
-          <p class="day">
-            25
-          </p>
-        </ion-col>
-        <ion-col class="event-name">
-          Heritage Tours
-          <p class="event-location">
-            Canberra Glassworks
-          </p>
-        </ion-col>
-
-      </ion-row>
-    </ion-card-content>
-
-  </ion-card>
-
-  <ion-card>
-
-    <img src="../../assets/imgs/events/summer-sensations.png"/>
-
-    <div class="fab-container">
-      <ion-fab bottom right edge>
-        <button ion-fab mini color="light">
-          <ion-icon name="ios-open-outline"></ion-icon>
-        </button>
-      </ion-fab>
-    </div>
-
-    <ion-card-content>
-      <ion-row no-padding>
-
-        <ion-col col-3 text-center>
-          <p class="month">
-            JAN
-          </p>
-          <p class="day">
-            10
-          </p>
-        </ion-col>
-        <ion-col class="event-name">
-          Summer Sensations
-          <p class="event-location">
-            Canberra Glassworks
-          </p>
-        </ion-col>
-
-      </ion-row>
-    </ion-card-content>
-
-  </ion-card>
-
-  <ion-card>
-
-    <img src="../../assets/imgs/events/renewable-energy-day.png"/>
-
-    <div class="fab-container">
-      <ion-fab bottom right edge>
-        <button ion-fab mini color="light">
-          <ion-icon name="ios-open-outline"></ion-icon>
-        </button>
-      </ion-fab>
-    </div>
-
-    <ion-card-content>
-      <ion-row no-padding>
-
-        <ion-col col-3 text-center>
-          <p class="month">
-            NOV
-          </p>
-          <p class="day">
-            25
-          </p>
-        </ion-col>
-        <ion-col class="event-name">
-          Renewable Energy Day 2017
-          <p class="event-location">
-            Visit renewable energy sites throughout the ACT
-          </p>
-        </ion-col>
-
-      </ion-row>
-    </ion-card-content>
-
-  </ion-card>
+  </div>
 
 
 </ion-content>
