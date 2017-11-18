@@ -15,6 +15,27 @@ page-events {
     color: black;
   }
 
+  .month {
+    font-size: 1.8rem;
+    color: red;
+  }
+
+  .day {
+    font-size: 1.6rem;
+    color: black;
+  }
+
+  .fab-container {
+    position: relative;
+  }
+
+  .event-name {
+    padding-top: 8px;
+  }
+
+  .event-location {
+    padding-top: 6px;
+  }
 
 }
 
