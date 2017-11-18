@@ -5,7 +5,10 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      Events
+      <button ion-button clear icon-right color="light" (click)="toggleLocation()">
+        {{ location }}
+        <ion-icon name="arrow-down"></ion-icon>
+      </button>
     </ion-title>
   </ion-navbar>
 

@@ -20,6 +20,8 @@ interface CardInterface {
 })
 export class EventsPage {
 
+  location:String = 'Kingston, ACT';
+
   cards: CardInterface[] = [
     {
       name: 'Innovation Showcase 2017',
@@ -60,6 +62,10 @@ export class EventsPage {
               private logger: LoggerService) {
 
     this.logger.info('EventsPage initialised');
+  }
+
+  toggleLocation() {
+    this.logger.info('EventsPage: toggleLocation()');
   }
 
   goToEvent(card: any) {
