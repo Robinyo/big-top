@@ -186,3 +186,70 @@ $tabs-ios-tab-icon-color-active:    $tabs-ios-tab-color-active !default;
   }
 
 */
+
+
+/*
+
+page-events {
+
+  .toolbar {
+    // background-color: white;
+    // background: white;
+    background-color: transparent;
+  }
+
+  .content {
+    color: black;
+  }
+
+  .month {
+    font-size: 1.8rem;
+    color: red;
+  }
+
+  .day {
+    font-size: 1.6rem;
+    color: black;
+  }
+
+  .fab-container {
+    position: relative;
+  }
+
+  .event-name {
+    padding-top: 8px;
+  }
+
+  .event-location {
+    padding-top: 6px;
+  }
+
+}
+
+*/
+
+/*
+
+
+  .toolbar-title {
+    font-size: 2.0rem;
+    font-weight: bold;
+  }
+
+  .button-ios {
+    font-size: 2.0rem;
+  }
+
+  ion-content {
+    div.scroll-content {
+      background-color: lightgray;
+    }
+  }
+
+  .bar-buttons {
+    // color: black;
+    color: white;
+  }
+
+*/
+

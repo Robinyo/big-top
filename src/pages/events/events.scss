@@ -1,61 +1,48 @@
-page-events {
+/*
+  ios 	    ios Viewing on an iphone, ipad, or ipod will use the iOS styles.
+  android 	md 	Viewing on any android device will use the Material Design styles.
+  windows 	wp 	Viewing on any windows device inside cordova or electron uses the Windows styles.
+  core     	md 	Any platform that doesn’t fit any of the above platforms will use the Material Design styles.
+ */
 
-  .toolbar {
-    // background-color: white;
-    // background: white;
-    background-color: transparent;
-  }
+.ios, .md, .wp {
 
-  /*
-  .toolbar-title {
-    font-size: 2.0rem;
-    font-weight: bold;
-  }
+  page-events {
 
-  .button-ios {
-    font-size: 2.0rem;
-  }
-  */
+    .content {
+      color: black;
+    }
 
-  .content {
-    color: black;
-  }
+    .month {
+      font-size: 1.8rem;
+      color: red;
+    }
 
-  .month {
-    font-size: 1.8rem;
-    color: red;
-  }
+    .day {
+      font-size: 1.6rem;
+      color: black;
+    }
 
-  .day {
-    font-size: 1.6rem;
-    color: black;
-  }
+    .fab-container {
+      position: relative;
+    }
 
-  .fab-container {
-    position: relative;
-  }
+    .event-name {
+      padding-top: 8px;
+    }
 
-  .event-name {
-    padding-top: 8px;
-  }
+    .event-location {
+      padding-top: 6px;
+    }
 
-  .event-location {
-    padding-top: 6px;
   }
 
 }
 
 /*
 
-  ion-content {
-    div.scroll-content {
-      background-color: lightgray;
-    }
-  }
-
-  .bar-buttons {
-    // color: black;
-    color: white;
+  .card p {
+    font-size: 1.4rem;
   }
 
 */
