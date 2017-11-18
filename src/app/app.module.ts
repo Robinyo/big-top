@@ -11,6 +11,11 @@ import { IntroductionPage } from '../pages/introduction/introduction';
 // Account pages
 import { SignInPage } from '../pages/sign-in/sign-in';
 
+// Event pages
+import { TabsPage } from '../pages/tabs/tabs';
+import { EventsPage } from '../pages/events/events';
+import { SearchPage } from '../pages/search/search';
+
 // Logging Services
 import { LoggerService } from '../services/log4ts/logger.service';
 import { ConsoleLoggerService } from '../services/log4ts/console-logger.service';
@@ -19,17 +24,33 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
   declarations: [
     MyApp,
     IntroductionPage,
-    SignInPage
+    SignInPage,
+    TabsPage,
+    EventsPage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    // HttpModule,
+    IonicModule.forRoot(MyApp, {}, {
+      links: [
+        { component: IntroductionPage, name: 'Introduction', segment: 'introduction' },
+        { component: SignInPage, name: 'SignInPage', segment: 'sign-in' },
+        { component: TabsPage, name: 'TabsPage', segment: 'tabs' },
+        { component: EventsPage, name: 'Events', segment: 'events' },
+        { component: SearchPage, name: 'Search', segment: 'search' }
+      ]
+    })
+    // , IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     IntroductionPage,
-    SignInPage
+    SignInPage,
+    TabsPage,
+    EventsPage,
+    SearchPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},

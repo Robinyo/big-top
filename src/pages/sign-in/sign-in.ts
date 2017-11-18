@@ -4,6 +4,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 
+import { TabsPage } from '../tabs/tabs';
+
 import { LoggerService } from '../../services/log4ts/logger.service';
 
 import { regexValidators } from '../validators/validator';
@@ -54,7 +56,7 @@ export class SignInPage {
     this.logger.info('SignInPage - Password: ' + this.form.controls['password'].value);
 
     if (this.form.valid) {
-      this.navCtrl.pop();
+      this.navCtrl.push(TabsPage);
     }
   }
 }

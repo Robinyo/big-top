@@ -1,0 +1,58 @@
+page-events {
+
+  .toolbar {
+    // background-color: white;
+    // background: white;
+    background-color: transparent;
+  }
+
+  .toolbar-title {
+    font-size: 2.0rem;
+    font-weight: bold;
+  }
+
+  .content {
+    color: black;
+  }
+
+
+}
+
+/*
+
+/// @prop - Text color of the active tab button
+$tabs-ios-tab-text-color-active:    $tabs-ios-tab-color-active !default;
+
+/// @prop - Icon color of the inactive tab button
+$tabs-ios-tab-icon-color:           $tabs-ios-tab-color-inactive !default;
+
+/// @prop - Icon color of the active tab button
+$tabs-ios-tab-icon-color-active:    $tabs-ios-tab-color-active !default;
+
+
+  ion-content {
+    div.scroll-content {
+      // background-color: lightgray;
+    }
+  }
+
+  .bar-buttons, .toolbar-title {
+    // color: black;
+    color: white;
+  }
+
+  ion-content {
+    background-color: white;
+  }
+
+
+    div.scroll-content {
+      background-color: white;
+
+      .ion-card {
+        color: black;
+      }
+    }
+
+
+*/

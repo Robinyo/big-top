@@ -1,0 +1,31 @@
+page-tabs {
+
+  //
+  // iOS
+  //
+
+  .tabs-ios .tabbar {
+    // background: white;
+    background-color: transparent;
+  }
+
+  .tabs-ios .tab-button-icon {
+    color: #8c8c8c;
+  }
+
+  .tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    // color: #488aff;
+    color: white;
+  }
+
+  .tabs-ios .tab-button {
+    color: #8c8c8c;
+  }
+
+  .tabs-ios .tab-button:hover:not(.disable-hover),
+  .tabs-ios .tab-button[aria-selected=true] {
+    // color: #488aff;
+    color: white;
+  }
+
+}
