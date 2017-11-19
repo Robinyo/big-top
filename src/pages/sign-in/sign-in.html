@@ -65,11 +65,29 @@
       </ion-col>
     </ion-row>
 
+    <ion-row>
+      <div class="fab-container" style="padding-top: 80px;">
+        <ion-fab left bottom>
+          <button ion-fab color="primary"><ion-icon name="log-in"></ion-icon></button>
+          <ion-fab-list side="right">
+            <button ion-fab color="light"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-fab color="light"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button ion-fab color="light"><ion-icon name="logo-googleplus"></ion-icon></button>
+            <button ion-fab color="light"><ion-icon name="logo-github"></ion-icon></button>
+          </ion-fab-list>
+        </ion-fab>
+      </div>
+    </ion-row>
+
   </form>
+
+
 
 </ion-content>
 
 <!--
+
+<ion-fab-list side="top">
 
 <button ion-button block color="secondary" [disabled]="!credentialsForm.valid" (click)="onSignIn()">
 
