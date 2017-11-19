@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { TabsPage } from '../tabs/tabs';
 
@@ -18,7 +18,6 @@ import { regexValidators } from '../validators/validator';
 export class SignInPage {
 
   form: FormGroup;
-  email: AbstractControl;
 
   submitted: boolean = false;
 
@@ -46,23 +45,28 @@ export class SignInPage {
     });
   }
 
-  signIn() {
-
-    this.logger.info('SignInPage: signIn()');
+  onSignIn() {
 
     this.submitted = true;
 
-    this.logger.info('SignInPage - Email: ' + this.form.controls['email'].value);
-    this.logger.info('SignInPage - Password: ' + this.form.controls['password'].value);
+    this.logger.info('SignInPage: onSignIn()');
+    this.logger.info('Email: ' + this.form.controls['email'].value);
+    this.logger.info('Password: ' + this.form.controls['password'].value);
 
     if (this.form.valid) {
       this.navCtrl.push(TabsPage);
     }
+  }
+
+  onForgotPassword() {
+    this.logger.info('SignInPage: onForgotPassword()');
   }
 }
 
 /*
 
  if (this.form.dirty && this.form.valid) {
+
+  email: AbstractControl;
 
 */

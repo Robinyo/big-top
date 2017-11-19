@@ -44,7 +44,7 @@
 
     <ion-row class="sign-in-button-row">
       <ion-col text-center>
-        <button ion-button block color="secondary" [disabled]="!form.valid" (click)="signIn()">
+        <button ion-button block color="secondary" [disabled]="!form.valid" (click)="onSignIn()">
           Sign in
         </button>
       </ion-col>
@@ -52,7 +52,7 @@
 
     <ion-row>
       <ion-col text-center>
-        <button ion-button clear color="light">
+        <button ion-button clear color="light" (click)="onForgotPassword()">
           Forgot your password?
         </button>
       </ion-col>
