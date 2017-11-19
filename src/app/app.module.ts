@@ -57,6 +57,5 @@ import { ConsoleLoggerService } from '../services/log4ts/console-logger.service'
     {provide: LoggerService, useClass: ConsoleLoggerService}
   ]
 })
-
 export class AppModule {}
 
