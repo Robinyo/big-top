@@ -20,31 +20,38 @@
     </ion-col>
   </ion-row>
 
-  <form [formGroup]="form">
+  <form [formGroup]="credentialsForm">
+
     <!--
     <ion-input doesn't support autofocus
     -->
     <ion-item>
       <ion-label floating>Email</ion-label>
+      <!--
       <ion-input formControlName="email" type="email"></ion-input>
+      -->
+      <ion-input [formControl]="credentialsForm.controls['email']" type="email"></ion-input>
     </ion-item>
 
-    <div *ngIf="!form.controls.email.valid && (form.controls.email.dirty || submitted)">
+    <div *ngIf="!credentialsForm.controls.email.valid && (credentialsForm.controls.email.dirty || submitted)" class="validator-error">
       Please enter a valid email.
     </div>
 
     <ion-item>
       <ion-label floating>Password</ion-label>
+      <!--
       <ion-input formControlName="password" type="password"></ion-input>
+      -->
+      <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
 
-    <div *ngIf="!form.controls.password.valid && (form.controls.password.dirty || submitted)">
+    <div *ngIf="!credentialsForm.controls.password.valid && (credentialsForm.controls.password.dirty || submitted)" class="validator-error">
       Please enter a valid password.
     </div>
 
     <ion-row class="sign-in-button-row">
       <ion-col text-center>
-        <button ion-button block color="secondary" [disabled]="!form.valid" (click)="onSignIn()">
+        <button ion-button block color="secondary" [disabled]="!credentialsForm.valid" (click)="onSignIn()">
           Sign in
         </button>
       </ion-col>
@@ -64,11 +71,9 @@
 
 <!--
 
+<button ion-button block color="secondary" [disabled]="!credentialsForm.valid" (click)="onSignIn()">
+
 <ion-footer no-border>
 </ion-footer>
-
-<div *ngIf="!form.controls.email.valid && (form.controls.email.dirty || submitted)">
-
-<div *ngIf="!form.controls.email.password && (form.controls.password.dirty || submitted)">
 
 -->

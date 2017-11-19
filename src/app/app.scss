@@ -63,8 +63,8 @@
   }
 
   .tabs .tab-button[aria-selected=true] .tab-button-icon {
-    // color: #488aff;
-    color: white;
+    // color: color($colors, danger);
+    color: white; // color: #488aff;
   }
 
   .tabs .tab-button {
@@ -73,8 +73,8 @@
 
   .tabs .tab-button:hover:not(.disable-hover),
   .tabs .tab-button[aria-selected=true] {
-    // color: #488aff;
-    color: white;
+    // color: color($colors, danger);
+    color: white; // color: #488aff;
   }
 }
 

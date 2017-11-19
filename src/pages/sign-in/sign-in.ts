@@ -17,7 +17,7 @@ import { regexValidators } from '../validators/validator';
 })
 export class SignInPage {
 
-  form: FormGroup;
+  credentialsForm: FormGroup;
 
   submitted: boolean = false;
 
@@ -30,15 +30,33 @@ export class SignInPage {
 
     this.logger.info('SignInPage initialised');
 
-    this.form = this.formBuilder.group({
+    this.credentialsForm = this.formBuilder.group({
 
-      email: ['chunkylover53@aol.com', Validators.compose([Validators.pattern(regexValidators.email), Validators.required])],
-      password: ['NoM@reSecrets1', Validators.compose([Validators.pattern(regexValidators.password), Validators.required])]
+      email: [
+        'chunkylover53@aol.com',
+        Validators.compose([Validators.pattern(regexValidators.email), Validators.required])
+      ],
+      password: [
+        'NoM@reSecrets1',
+        Validators.compose([Validators.pattern(regexValidators.password), Validators.required])
+      ]
 
       /*
 
+      email: [''],
+      password: ['']
+
       email: ['', Validators.required],
       password: ['', Validators.required]
+
+      email: [
+        'chunkylover53@aol.com',
+        Validators.compose([Validators.pattern(regexValidators.email), Validators.required])
+      ],
+      password: [
+        'NoM@reSecrets1',
+        Validators.compose([Validators.pattern(regexValidators.password), Validators.required])
+      ]
 
       */
 
@@ -50,10 +68,10 @@ export class SignInPage {
     this.submitted = true;
 
     this.logger.info('SignInPage: onSignIn()');
-    this.logger.info('Email: ' + this.form.controls['email'].value);
-    this.logger.info('Password: ' + this.form.controls['password'].value);
+    this.logger.info('Email: ' + this.credentialsForm.controls['email'].value);
+    this.logger.info('Password: ' + this.credentialsForm.controls['password'].value);
 
-    if (this.form.valid) {
+    if (this.credentialsForm.valid) {
       this.navCtrl.push(TabsPage);
     }
   }
@@ -65,7 +83,7 @@ export class SignInPage {
 
 /*
 
- if (this.form.dirty && this.form.valid) {
+ if (this.credentialsForm.dirty && this.credentialsForm.valid) {
 
   email: AbstractControl;
 
