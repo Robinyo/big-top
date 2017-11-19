@@ -78,7 +78,7 @@ For example, the 'Sign in' page:
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-sign-in-page.png">
 </p>
 
-The 'Events' page:
+and the 'Events' page:
 
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-events-page.png">
