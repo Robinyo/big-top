@@ -33,7 +33,8 @@
       <ion-input [formControl]="credentialsForm.controls['email']" type="email"></ion-input>
     </ion-item>
 
-    <div *ngIf="!credentialsForm.controls.email.valid && (credentialsForm.controls.email.dirty || submitted)" class="validator-error">
+    <div *ngIf="!credentialsForm.controls.email.valid &&
+        (credentialsForm.controls.email.dirty || submitted)" class="validator-error">
       Please enter a valid email.
     </div>
 
@@ -45,11 +46,20 @@
       <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
 
-    <div *ngIf="!credentialsForm.controls.password.valid && (credentialsForm.controls.password.dirty || submitted)" class="validator-error">
+    <div *ngIf="!credentialsForm.controls.password.valid &&
+        (credentialsForm.controls.password.dirty || submitted)" class="validator-error">
       Please enter a valid password.
-    </div>
+    </div>>
 
-    <ion-row class="sign-in-button-row">
+    <!--
+    <div *ngIf="!credentialsForm.controls.password.hasError('pattern') &&
+        (credentialsForm.controls.password.dirty || submitted)"
+        class="validator-error">
+      Passwords should be at least 8 characters long and contain one number, one character and one special character.
+    </div>
+    -->
+
+    <ion-row class="sign-in-button-container">
       <ion-col text-center>
         <button ion-button block color="secondary" [disabled]="!credentialsForm.valid" (click)="onSignIn()">
           Sign in
@@ -84,10 +94,6 @@
 </ion-content>
 
 <!--
-
-<ion-fab-list side="top">
-
-<button ion-button block color="secondary" [disabled]="!credentialsForm.valid" (click)="onSignIn()">
 
 <ion-footer no-border>
 </ion-footer>
