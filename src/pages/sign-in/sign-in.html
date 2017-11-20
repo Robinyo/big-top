@@ -46,18 +46,19 @@
       <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
 
-    <div *ngIf="!credentialsForm.controls.password.valid
-        && (credentialsForm.controls.password.dirty || submitted)" class="validator-error">
-      Please enter a valid password.
-    </div>
-
     <!--
+    <div *ngIf="credentialsForm.controls.password.hasError('pattern') &&
+        (credentialsForm.controls.password.dirty || submitted)"
+         class="validator-error">
+      Passwords should be at least 8 characters long and contain one number, one character and one special character.
+    </div>
+    -->
+
     <div *ngIf="credentialsForm.controls.password.hasError('pattern') &&
         (credentialsForm.controls.password.dirty || submitted)"
         class="validator-error">
       Passwords should be at least 8 characters long and contain one number, one character and one special character.
     </div>
-    -->
 
     <ion-row class="sign-in-button-container">
       <ion-col text-center>
