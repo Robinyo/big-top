@@ -14,7 +14,7 @@
 
   <!-- Sign in -->
 
-  <ion-row class="app-icon-row">
+  <ion-row class="app-icon-container">
     <ion-col text-center>
       <ion-icon name="ionic" class="app-icon-zoom"></ion-icon>
     </ion-col>
@@ -46,10 +46,10 @@
       <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
 
-    <div *ngIf="!credentialsForm.controls.password.valid &&
-        (credentialsForm.controls.password.dirty || submitted)" class="validator-error">
+    <div *ngIf="!credentialsForm.controls.password.valid
+        && (credentialsForm.controls.password.dirty || submitted)" class="validator-error">
       Please enter a valid password.
-    </div>>
+    </div>
 
     <!--
     <div *ngIf="!credentialsForm.controls.password.hasError('pattern') &&
