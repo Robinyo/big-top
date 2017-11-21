@@ -138,37 +138,67 @@ Update `package.json`:
 Updated `tsconfig.json` in `compilerOptions`:
 ```json
   "compilerOptions": {
+  
+    ...
+    
     "target": "es5",
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
     "baseUrl": "./src",
     "paths": {
-      "@app/env": [ "environments/environment" ],
+      "@app/*": [ "app/*" ],
+      "@assets/*": [ "assets/*" ],
+      "@env": [ "environments/environment" ],
+      "@pages/*": [ "pages/*" ],
+      "@services/*": [ "services/*" ],
+      "@theme/*": [ "theme/*" ]
     }
+    
+    ...
+    
   },
 ```
 
 Created `config/webpack.config.js`:
 ```javascript
-var chalk = require("chalk");
-var fs = require('fs');
-var path = require('path');
-var useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
+const chalk = require("chalk");
+const fs = require('fs');
+const path = require('path');
+const useDefaultConfig = require('@ionic/app-scripts/config/webpack.config.js');
 
-var env = process.env.IONIC_ENV;
+const env = process.env.IONIC_ENV;
 
 if (env === 'prod' || env === 'dev') {
+
   useDefaultConfig[env].resolve.alias = {
-    "@app/env": path.resolve(environmentPath())
+    "@app": path.resolve('./src/app/'),
+    "@assets": path.resolve('./src/assets/'),
+    "@env": path.resolve(environmentPath()),
+    "@pages": path.resolve('./src/pages/'),
+    "@services": path.resolve('./src/services/'),
+    "@theme": path.resolve('./src/theme/')
   };
+
 } else {
+
   // Default to dev config
   useDefaultConfig[env] = useDefaultConfig.dev;
   useDefaultConfig[env].resolve.alias = {
-    "@app/env": path.resolve(environmentPath())
+    "@app": path.resolve('./src/app/'),
+    "@assets": path.resolve('./src/assets/'),
+    "@env": path.resolve(environmentPath()),
+    "@pages": path.resolve('./src/pages/'),
+    "@services": path.resolve('./src/services/'),
+    "@theme": path.resolve('./src/theme/')
   };
+
 }
 
 function environmentPath() {
-  var filePath = './src/environments/environment' + (env === 'prod' ? '' : '.' + env) + '.ts';
+
+  let filePath = './src/environments/environment' + (env === 'prod' ? '' : '.' + env) + '.ts';
+
   if (!fs.existsSync(filePath)) {
     console.log(chalk.red('\n' + filePath + ' does not exist!'));
   } else {
@@ -198,7 +228,7 @@ export const ENV = {
 ```
 Import your environment variables:
 ```typescript
-import { ENV } from '@app/env'
+import { ENV } from '@env'
 ```
 **Note:** Remember to ignore your environment files in your `.gitignore`
 ```
