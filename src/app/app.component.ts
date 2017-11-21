@@ -2,6 +2,8 @@
  * The Application component for the Big Top App.
  */
 
+import { ENV } from '@env';
+
 import { Component, ViewChild } from '@angular/core';
 
 import { Content, Events, Nav, Platform } from 'ionic-angular';
@@ -11,7 +13,6 @@ import { SignInPage } from '../pages/sign-in/sign-in';
 
 import { LoggerService } from '../services/log4ts/logger.service';
 
-import { ENV } from '@app/env';
 let isDebugMode = ENV.isDebugMode;
 
 interface PageInterface {

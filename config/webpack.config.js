@@ -8,9 +8,9 @@ const env = process.env.IONIC_ENV;
 if (env === 'prod' || env === 'dev') {
 
   useDefaultConfig[env].resolve.alias = {
-    "@app/env": path.resolve(environmentPath()),
     "@app": path.resolve('./src/app/'),
     "@assets": path.resolve('./src/assets/'),
+    "@env": path.resolve(environmentPath()),
     "@pages": path.resolve('./src/pages/'),
     "@services": path.resolve('./src/services/'),
     "@theme": path.resolve('./src/theme/')
@@ -21,9 +21,9 @@ if (env === 'prod' || env === 'dev') {
   // Default to dev config
   useDefaultConfig[env] = useDefaultConfig.dev;
   useDefaultConfig[env].resolve.alias = {
-    "@app/env": path.resolve(environmentPath()),
     "@app": path.resolve('./src/app/'),
     "@assets": path.resolve('./src/assets/'),
+    "@env": path.resolve(environmentPath()),
     "@pages": path.resolve('./src/pages/'),
     "@services": path.resolve('./src/services/'),
     "@theme": path.resolve('./src/theme/')

@@ -1,4 +1,4 @@
-import { ENV } from '@app/env';
+import { ENV } from '@env';
 
 import { Injectable } from '@angular/core';
 
