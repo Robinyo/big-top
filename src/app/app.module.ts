@@ -6,19 +6,19 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { BigTopApp } from './app.component';
 
 // Welcome pages
-import { IntroductionPage } from '../pages/introduction/introduction';
+import { IntroductionPage } from '@pages/introduction/introduction';
 
 // Account pages
-import { SignInPage } from '../pages/sign-in/sign-in';
+import { SignInPage } from '@pages/sign-in/sign-in';
 
 // Event pages
-import { TabsPage } from '../pages/tabs/tabs';
-import { EventsPage } from '../pages/events/events';
-import { SearchPage } from '../pages/search/search';
+import { TabsPage } from '@pages/tabs/tabs';
+import { EventsPage } from '@pages/events/events';
+import { SearchPage } from '@pages/search/search';
 
 // Logging Services
-import { LoggerService } from '../services/log4ts/logger.service';
-import { ConsoleLoggerService } from '../services/log4ts/console-logger.service';
+import { LoggerService } from '@services/log4ts/logger.service';
+import { ConsoleLoggerService } from '@services/log4ts/console-logger.service';
 
 @NgModule({
   declarations: [

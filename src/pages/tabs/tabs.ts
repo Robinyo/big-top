@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { EventsPage } from '../events/events';
-import { SearchPage } from '../search/search';
+import { EventsPage } from '@pages/events/events';
+import { SearchPage } from '@pages/search/search';
 
-import { LoggerService } from '../../services/log4ts/logger.service';
+import { LoggerService } from '@services/log4ts/logger.service';
 
 @IonicPage()
 @Component({

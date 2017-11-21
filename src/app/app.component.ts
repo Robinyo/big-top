@@ -8,10 +8,10 @@ import { Component, ViewChild } from '@angular/core';
 
 import { Content, Events, Nav, Platform } from 'ionic-angular';
 
-import { IntroductionPage } from '../pages/introduction/introduction';
-import { SignInPage } from '../pages/sign-in/sign-in';
+import { IntroductionPage } from '@pages/introduction/introduction';
+import { SignInPage } from '@pages/sign-in/sign-in';
 
-import { LoggerService } from '../services/log4ts/logger.service';
+import { LoggerService } from '@services/log4ts/logger.service';
 
 let isDebugMode = ENV.isDebugMode;
 

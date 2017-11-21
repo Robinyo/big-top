@@ -2,9 +2,9 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
-import { LoggerService } from '../../services/log4ts/logger.service';
+import { LoggerService } from '@services/log4ts/logger.service';
 
-import { SignInPage } from '../../pages/sign-in/sign-in';
+import { SignInPage } from '@pages/sign-in/sign-in';
 
 @IonicPage()
 @Component({
