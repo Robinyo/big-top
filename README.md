@@ -126,13 +126,6 @@ If everything works as expected electron-builder will create a `/dist` directory
 
 I followed these steps to add support for environment variables.
 
-Update `package.json`:
-```json
-"config": {
-  "ionic_webpack": "./config/webpack.config.js"
-}
-```
-
 Updated `tsconfig.json` in `compilerOptions`:
 ```json
   "compilerOptions": {
@@ -224,6 +217,14 @@ export const ENV = {
   isDebugMode: true
 };
 ```
+
+Update `package.json`:
+```json
+"config": {
+  "ionic_webpack": "./config/webpack.config.js"
+}
+```
+
 Import your environment variables:
 ```typescript
 import { ENV } from '@env'
