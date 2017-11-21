@@ -121,8 +121,6 @@ To package the application:
 If everything works as expected electron-builder will create a `/dist` directory.
 
 ## Build Management
-* [Easy to use environment variables for Ionic 3](https://github.com/gshigeto/ionic-environment-variables)
-* [Ionic CLI - Issue 1205 - Environment variable configuration](https://github.com/ionic-team/ionic-cli/issues/1205)
 
 ### Environment Variables
 
@@ -237,11 +235,18 @@ import { ENV } from '@env'
 !**/environment.model.ts
 ```
 
+#### References:
+
+* [Easy to use environment variables for Ionic 3](https://github.com/gshigeto/ionic-environment-variables)
+* [Ionic CLI - Issue 1205 - Environment variable configuration](https://github.com/ionic-team/ionic-cli/issues/1205)
+
 ## Simple Logging Service
 
-* [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
+Take a look at the `.ts` files in the `src/services/log4ts` directory.
 
-Take a look at the .ts files in the `src/services/log4ts` directory.
+#### References: 
+
+* [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
 
 ## Scaffolding
 
