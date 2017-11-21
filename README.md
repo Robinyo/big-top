@@ -141,9 +141,7 @@ Updated `tsconfig.json` in `compilerOptions`:
     "target": "es5",
     "baseUrl": "./src",
     "paths": {
-      "@app/env": [
-        "environments/environment"
-      ]
+      "@app/env": [ "environments/environment" ],
     }
   },
 ```

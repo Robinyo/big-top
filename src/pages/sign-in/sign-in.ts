@@ -4,11 +4,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { TabsPage } from '../tabs/tabs';
+// import { TabsPage } from '../tabs/tabs';
+import { TabsPage } from '@pages/tabs/tabs';
+// import { regexValidators } from '../validators/validator';
+import { regexValidators } from '@pages/validators/validator';
 
 import { LoggerService } from '../../services/log4ts/logger.service';
-
-import { regexValidators } from '../validators/validator';
 
 @IonicPage()
 @Component({
