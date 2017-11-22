@@ -126,7 +126,7 @@ If everything works as expected electron-builder will create a `/dist` directory
 
 I followed these steps to add support for environment variables.
 
-Updated `tsconfig.json` in `compilerOptions`:
+Updated `compilerOptions` in `tsconfig.json`:
 ```json
   "compilerOptions": {
   
