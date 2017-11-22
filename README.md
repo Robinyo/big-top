@@ -270,6 +270,9 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 * Rob Ferguson's blog: [Ionic 3 and Forms - Part 2](https://robferguson.org/blog/2017/11/20/ionic-3-and-forms-part-2/)
 * Rob Ferguson's blog: [Working with TypeScript, webpack and Ionic 3](https://robferguson.org/blog/2017/11/22/working-with-typescript-webpack-and-ionic-3/)
 
+## Style Guides 
+* Angular docs: [Angular Style Guide](https://angular.io/guide/styleguide)
+
 ### Electron Resources:
 * Electron docs: [Quick Start](https://electron.atom.io/docs/tutorial/quick-start/)
 * GitHub Pages: [Angular on Electron, part 1](https://sohlich.github.io/post/angular_electron/)
