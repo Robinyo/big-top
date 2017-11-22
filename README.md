@@ -148,7 +148,6 @@ Updated `compilerOptions` in `tsconfig.json`:
   }
   
   ...
-  
 ```
 
 Created `config/webpack.config.js`:
