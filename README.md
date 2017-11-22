@@ -145,10 +145,10 @@ Updated `compilerOptions` in `tsconfig.json`:
       "@services/*": [ "services/*" ],
       "@theme/*": [ "theme/*" ]
     }
-    
-    ...
-    
-  },
+  }
+  
+  ...
+  
 ```
 
 Created `config/webpack.config.js`:
