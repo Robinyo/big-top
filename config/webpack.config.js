@@ -48,6 +48,18 @@ module.exports = function () {
 
 /*
 
+https://github.com/ionic-team/ionic-app-scripts/issues/1271
+https://github.com/ionic-team/ionic-app-scripts/blob/master/config/webpack.config.js
+
+module.exports = {
+  dev: useDefaultConfig,
+  prod: useDefaultConfig
+}
+
+*/
+
+/*
+
 "tabs-page": [ "pages/tabs/tabs" ]
 "tabs-page": path.resolve('./src/pages/tabs/tabs.ts')
 
