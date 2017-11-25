@@ -22,7 +22,7 @@ Before submitting an issue, please go through [the list below](#before-submittin
 
 #### Before Submitting an Issue
 
-* Make sure you get the latest version of the code and run through the [Getting Started](https://github.com/Robinyo/big-top#getting-started) steps to see if this resolves your issue.
+* Make sure you get the latest version of the code and run through the [Quick Start](https://github.com/Robinyo/big-top#quick-start) steps to see if this resolves your issue.
 * Go through [all the issues](https://github.com/Robinyo/big-top/issues) on this repository to see if the issue has already been created. It could have been closed with a resolution, so check closed issues, too.
 
 #### Submitting the Issue

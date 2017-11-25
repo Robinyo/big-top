@@ -27,7 +27,7 @@ Desktop (masOS, Linux and Windows) platforms.
 * [Download](https://nodejs.org/) and install Node.js
 * Install the Ionic CLI globally: `npm install -g ionic@latest`
 * Clone this repository: `git clone https://github.com/Robinyo/big-top.git`
-* Run `npm install` in the project's root directory.
+* Run `npm install` in the project's root directory
 * Run `ionic serve`
 
 ## License
