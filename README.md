@@ -245,7 +245,6 @@ Updated `tsconfig.ng-cli.json` in `compilerOptions`:
 ```json
 "paths": {
   "@app/*": [ "app/*" ],
-  "@app/env": [ "environments/environment" ],
   "@assets/*": [ "assets/*" ],
   "@env": [ "environments/environment" ],
   "@pages/*": [ "pages/*" ],
