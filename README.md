@@ -29,10 +29,10 @@ Desktop (masOS, Linux and Windows) platforms.
 - Ionic 3
 - Angular 5
 - Environment specific variable support
-- Documentation generation using Compodoc
 - Angular-style Unit Testing and End-to-End Testing
 - Logging
 - Dynamic Theme Support
+- Documentation generation using Compodoc
 
 ### Roadmap
 * Continuous Integration
