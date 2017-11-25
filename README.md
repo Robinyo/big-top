@@ -12,7 +12,7 @@ Desktop (masOS, Linux and Windows) platforms.
     - [Environment Variables](#environment-variables)
     - [Development](#development)
     - [Production](#production)
-- [Unit Testing and End-to-End (E2E) Testing](#unit-testing-and-end-to-end-(E2E)-testing) 
+- [Unit Testing and End-to-End Testing](#unit-testing-and-end-to-end-testing) 
     - [Jasmine](#jasmine)
     - [Karma](#karma)
     - [Protractor](#protractor)
@@ -278,9 +278,7 @@ To package the application:
 
 If everything works as expected electron-builder will create a `/dist` directory.
 
-## Unit Testing and End-to-End (E2E) Testing
-
-
+## Unit Testing and End-to-End Testing
 
 Updated `tsconfig.ng-cli.json` in `compilerOptions`:
 ```json
