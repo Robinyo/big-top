@@ -78,7 +78,7 @@ Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/io
 ----------------|---------------------------------------------------------------------------------------
  `clean`        | Empty the `www/build` directory.
  `lint`         | Run the linter against the project's `.ts` files, using the `tslint.json` config file located in the project's root directory.
- `dev`          | Run dev server for the Android platform and launch the default browser.
+ `dev`          | Run the dev server for the Android platform and launch the default browser.
  `ios:dev`      | Short cut for `npm run dev --platform=ios`
  `build`        | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
  `ios:build`    | Short cut for `npm run build --platform=ios`
