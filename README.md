@@ -228,15 +228,6 @@ import { ENV } from '@env'
 
 ### Development
 
-To clone the project:
-
-    git clone https://github.com/Robinyo/big-top.git
-
-To install the project's dependencies:
-
-    cd big-top
-    npm install
-
 To build the project:
 
     ionic build
