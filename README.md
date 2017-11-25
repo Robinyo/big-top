@@ -6,9 +6,11 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
-    - [Quick Start](#quick-start)
     - [License](#license)
     - [Contributing](#contributing)
+    - [Features](#features)
+    - [Roadmap](#roadmap)
+    - [Quick Start](#quick-start)    
     - [Screen Shots](#screen-shots)
 - [Build Management](#build-management) 
     - [Environment Variables](#environment-variables)
@@ -29,12 +31,20 @@
 A sample app that demonstrates how **one** codebase can be used for Mobile (iOS, Android and Windows Phone) and 
 Desktop (masOS, Linux and Windows) platforms.
 
+### License
+
+This work is licensed under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU) License. To view a copy of 
+this license, visit https://creativecommons.org/licenses/by/3.0/au/.
+
+### Contributing
+See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CONTRIBUTING.md)
+
 ### Features
 - Ionic 3
 - Angular 5
 - Environment specific variable support
 - Angular-style Unit Testing and End-to-End Testing
-- Logging
+- Simple Logging Service
 - Dynamic Theme Support
 - Documentation generation using Compodoc
 
@@ -63,13 +73,20 @@ npm install
 ionic serve --platform=ios
 ```
 
-### License
+### Build Tasks
 
-This work is licensed under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU) License. To view a copy of 
-this license, visit https://creativecommons.org/licenses/by/3.0/au/.
+Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/ionic-app-scripts).
 
-### Contributing
-See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CONTRIBUTING.md)
+Task                            | Description
+--------------------------------|---------------------------------------------------------------------------------------
+`npm run clean`                 | Empty the `www/build` directory.
+`npm run lint`                  | Run the linter against the source .ts files, using the tslint.json config file at the root.
+`npm run dev`                   | Run dev server for Android platform and launch default browser.
+`npm run ios:dev`               | Short cut for `npm run dev --platform=ios`
+`npm run build`                 | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
+`npm run ios:build`             | Short cut for `npm run build --platform=ios` 
+`npm run docs`                  | Display project documentation.
+`npm run serve-docs`            | Serve project documentation.
 
 ### Screen Shots
 

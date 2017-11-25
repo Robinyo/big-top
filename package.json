@@ -17,11 +17,18 @@
   },
   "private": true,
   "scripts": {
+
     "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve",
+
+    "dev": "ionic-app-scripts serve",
+    "ios:dev": "ionic-app-scripts serve --platform=ios",
+
+    "build": "ionic-app-scripts build",
+    "ios:build": "ionic-app-scripts build --platform=ios",
+
+
+
     "test": "ng test",
     "test-coverage": "ng test --code-coverage",
     "test-ci": "ng test --watch=false --code-coverage",
@@ -33,6 +40,7 @@
     "foreman-start": "nf start",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
+
     "docs": "./node_modules/.bin/compodoc -d ./docs/ -p ./tsconfig.json --theme vagrant",
     "serve-docs": "./node_modules/.bin/compodoc -s -d ./docs"
   },
