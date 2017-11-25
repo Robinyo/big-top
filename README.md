@@ -1,5 +1,9 @@
 # The Big Top App
 
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/ios/introduction-page.png">
+</p>
+
 ## Table of Contents
 - [Introduction](#introduction)
     - [Quick Start](#quick-start)
