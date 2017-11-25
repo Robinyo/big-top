@@ -37,7 +37,7 @@ This work is licensed under the Creative Commons Attribution 3.0 Australia (CC B
 this license, visit https://creativecommons.org/licenses/by/3.0/au/.
 
 ### Contributing
-See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CONTRIBUTING.md)
+See: [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CONTRIBUTING.md)
 
 ### Features
 - Ionic 3
@@ -63,7 +63,7 @@ git clone https://github.com/Robinyo/big-top.git
 # Change directory
 cd big-top
 
-# Install the project's dependencies:
+# Install the project's dependencies
 npm install
 
 # Launch the project
