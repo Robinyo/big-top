@@ -1,13 +1,11 @@
 # The Big Top App
 
-A sample app that demonstrates how **one** codebase can be used for Mobile (iOS, Android and Windows Phone) and 
-Desktop (masOS, Linux and Windows) platforms.
-
 ## Table of Contents
-- [Quick Start](#quick-start)
-- [License](#license)
-- [Contributing](#contributing)
-- [Screen Shots](#screen-shots)
+- [Introduction](#introduction)
+    - [Quick Start](#quick-start)
+    - [License](#license)
+    - [Contributing](#contributing)
+    - [Screen Shots](#screen-shots)
 - [Build Management](#build-management) 
     - [Environment Variables](#environment-variables)
     - [Development](#development)
@@ -22,23 +20,54 @@ Desktop (masOS, Linux and Windows) platforms.
 - [Documentation](#documentation)    
 - [Resources](#resources)  
 
-## Quick Start
+## Introduction
 
-* [Download](https://nodejs.org/) and install Node.js
-* Install the Ionic CLI globally: `npm install -g ionic@latest`
-* Clone this repository: `git clone https://github.com/Robinyo/big-top.git`
-* Run `npm install` in the project's root directory
-* Run `ionic serve`
+A sample app that demonstrates how **one** codebase can be used for Mobile (iOS, Android and Windows Phone) and 
+Desktop (masOS, Linux and Windows) platforms.
 
-## License
+### Features
+- Ionic 3
+- Angular 5
+- Environment specific variable support
+- Documentation generation using Compodoc
+- Angular-style Unit Testing and End-to-End Testing
+- Logging
+- Dynamic Theme Support
+
+### Roadmap
+* Continuous Integration
+
+### Quick Start
+
+```bash
+# Install Ionic globally using npm
+npm install -g ionic@latest
+
+# Install Angular globally using npm
+npm install -g @angular/cli@latest
+
+# Clone the project's repo
+git clone https://github.com/Robinyo/big-top.git
+
+# Change directory
+cd big-top
+
+# Install the project's dependencies:
+npm install
+
+# Launch the project
+ionic serve --platform=ios
+```
+
+### License
 
 This work is licensed under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU) License. To view a copy of 
 this license, visit https://creativecommons.org/licenses/by/3.0/au/.
 
-## Contributing
-See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/CONTRIBUTING.md)
+### Contributing
+See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CONTRIBUTING.md)
 
-## Screen Shots
+### Screen Shots
 
 If the screen's min-width is less than 992px ('xs', 'sm', 'md'):
 
