@@ -79,14 +79,18 @@ Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/io
 
 Task                            | Description
 --------------------------------|---------------------------------------------------------------------------------------
-`npm run clean`                 | Empty the `www/build` directory.
-`npm run lint`                  | Run the linter against the source .ts files, using the tslint.json config file at the root.
-`npm run dev`                   | Run dev server for Android platform and launch default browser.
-`npm run ios:dev`               | Short cut for `npm run dev --platform=ios`
-`npm run build`                 | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
-`npm run ios:build`             | Short cut for `npm run build --platform=ios` 
-`npm run docs`                  | Display project documentation.
-`npm run serve-docs`            | Serve project documentation.
+`clean`        | Empty the `www/build` directory.
+`lint`         | Run the linter against the source .ts files, using the tslint.json config file at the root.
+`dev`          | Run dev server for Android platform and launch default browser.
+`ios:dev`      | Short cut for `npm run dev --platform=ios`
+`build`        | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
+`ios:build`    | Short cut for `npm run build --platform=ios` 
+`docs`         | Display project documentation.
+`serve-docs`   | Serve project documentation.
+
+To invoke a task:
+
+    npm run clean
 
 ### Screen Shots
 
