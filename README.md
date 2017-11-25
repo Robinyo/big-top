@@ -85,7 +85,7 @@ Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/io
  `ios:dev`      | Short cut for `npm run dev --platform=ios`
  `build`        | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
  `ios:build`    | Short cut for `npm run build --platform=ios` 
- `docs`         | Display project documentation.
+ `docs`         | Generate project documentation.
  `serve-docs`   | Serve project documentation.
 
 To invoke a task:
