@@ -92,7 +92,7 @@ Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/io
 
 To invoke a task:
 
-    npm run clean
+    npm run [task]
 
 ### Screen Shots
 
