@@ -39,7 +39,7 @@ When in doubt, keep your pull requests small. To give a PR the best chance of ge
 
 It's always best to create two smaller PRs than one big one.
 
-Talk to us before creating a PR that refactors the code or directory structure of the project. This project is constantly changing to reflect the latest version of Ionic 2.0 so sometimes it will be in the process of getting fixed.
+Talk to us before creating a PR that refactors the code or directory structure of the project. This project is constantly changing to reflect the latest version of Ionic so sometimes it will be in the process of getting fixed.
 
 #### Code Style
 
