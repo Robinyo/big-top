@@ -39,7 +39,7 @@ Desktop (masOS, Linux and Windows) platforms.
 
 ### Quick Start
 
-```bash
+```
 # Install Ionic globally using npm
 npm install -g ionic@latest
 
