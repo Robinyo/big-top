@@ -366,8 +366,8 @@ In the `./coverage` folder open `index.html`
 
 ##### References:
 
-* [Testing an Angular project](https://angular.io/guide/testing)
 * [Testing an Ionic project](http://lathonez.com/2017/ionic-2-unit-testing/)
+* [Testing an Angular project](https://angular.io/guide/testing)
 
 ## Logging
 
