@@ -220,7 +220,8 @@ export const ENV = {
 Update `package.json`:
 ```json
 "config": {
-  "ionic_webpack": "./config/webpack.config.js"
+  "ionic_source_map_type": "source-map",
+  "ionic_webpack": "./config/webpack.config.js",
 }
 ```
 

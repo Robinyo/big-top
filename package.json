@@ -58,8 +58,8 @@
     "wait-on": "^2.0.2"
   },
   "config": {
+    "ionic_source_map_type": "source-map",
     "ionic_webpack": "./config/webpack.config.js",
-    "ionic_source_map_type": "source-map"
   },
   "main": "electron/main.js",
   "build": {
