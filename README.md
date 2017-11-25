@@ -54,9 +54,6 @@ See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CON
 ### Quick Start
 
 ```
-# Install Angular globally using npm
-npm install -g @angular/cli@latest
-
 # Install Ionic globally using npm
 npm install -g ionic@latest
 
