@@ -40,11 +40,11 @@ Desktop (masOS, Linux and Windows) platforms.
 ### Quick Start
 
 ```
-# Install Ionic globally using npm
-npm install -g ionic@latest
-
 # Install Angular globally using npm
 npm install -g @angular/cli@latest
+
+# Install Ionic globally using npm
+npm install -g ionic@latest
 
 # Clone the project's repo
 git clone https://github.com/Robinyo/big-top.git
