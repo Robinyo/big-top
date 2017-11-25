@@ -1,7 +1,44 @@
 # The Big Top App
 
-A sample app that uses **one** codebase for Mobile (iOS, Android and Windows Phone) and Desktop (masOS, Linux 
-and Windows) platforms.
+A sample app that demonstrates how **one** codebase can be used for Mobile (iOS, Android and Windows Phone) and 
+Desktop (masOS, Linux and Windows) platforms.
+
+## Table of Contents
+- [Quick Start](#quick-start)
+- [License](#license)
+- [Contributing](#contributing)
+- [Screen Shots](#screen-shots)
+- [Build Management](#build-management) 
+    - [Environment Variables](#environment-variables)
+    - [Development](#development)
+    - [Production](#production)
+- [Unit Testing and End-to-End (E2E) Testing](#unit-testing-and-end-to-end-(E2E)-testing) 
+    - [Jasmine](#jasmine)
+    - [Karma](#karma)
+    - [Protractor](#protractor)
+    - [Test Coverage](#test-coverage)
+- [Logging](#logging)    
+- [Theming](#theming)    
+- [Documentation](#documentation)    
+- [Resources](#resources)  
+
+## Quick Start
+
+* [Download](https://nodejs.org/) and install Node.js
+* Install the Ionic CLI globally: `npm install -g ionic@latest`
+* Clone this repository: `git clone https://github.com/Robinyo/big-top.git`
+* Run `npm install` in the project's root directory.
+* Run `ionic serve`
+
+## License
+
+This work is licensed under the Creative Commons Attribution 3.0 Australia (CC BY 3.0 AU) License. To view a copy of 
+this license, visit https://creativecommons.org/licenses/by/3.0/au/.
+
+## Contributing
+See [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/CONTRIBUTING.md)
+
+## Screen Shots
 
 If the screen's min-width is less than 992px ('xs', 'sm', 'md'):
 
@@ -38,87 +75,6 @@ The **Big Top Desktop Edition's installer** running on macOS Sierra:
 <p align="center">
   <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/big-top-dmg.png">
 </p>
-
-## Development
-
-To clone the project:
-
-    git clone https://github.com/Robinyo/big-top.git
-
-To install the project's dependencies:
-
-    cd big-top
-    npm install
-
-To build the project:
-
-    ionic build
-
-To launch the project:
-
-    ionic serve [--platform=ios | android] [--browser chrome | firefox | safari]
-
-Some examples:
-    
-    ionic serve --platform=ios
-    ionic serve --platform=android
-    ionic serve --platform=windows
-    
-    ionic serve --platform=ios --browser safari
-    ionic serve --platform=android --browser chrome
-    ionic serve --platform=windows --browser firefox
-
-You can preview all three supported Mobile platforms side by side:
-
-    ionic serve --lab
-
-For example, the 'Sign in' page:
-
-<p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-sign-in-page.png">
-</p>
-
-and the 'Events' page:
-
-<p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-events-page.png">
-</p>
-    
-### Electron
-
-To launch the project:
-
-In a terminal run the following command:
-
-    ionic serve --no-open
-    
-If you want to set the 'ELECTRON_START_URL' environment variable on macOS or Linux:
-    
-    ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
-
-On Windows use:
-
-    set ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
-
-In another terminal run the following command:
-
-    electron .
-
-**Note:** The commands must be run in separate terminal sessions as `ionic serve` is blocking.
-
-## Production
-
-To build the project:
-
-    ionic build --prod
-
-### Electron
-    
-To package the application:
-
-    npm run dist
-
-If everything works as expected electron-builder will create a `/dist` directory.
 
 ## Build Management
 
@@ -236,10 +192,95 @@ import { ENV } from '@env'
 !**/environment.model.ts
 ```
 
+##### References:
+
+* [Easy to use environment variables for Ionic 3](https://github.com/gshigeto/ionic-environment-variables)
+* [Ionic CLI - Issue 1205 - Environment variable configuration](https://github.com/ionic-team/ionic-cli/issues/1205)
+
+### Development
+
+To clone the project:
+
+    git clone https://github.com/Robinyo/big-top.git
+
+To install the project's dependencies:
+
+    cd big-top
+    npm install
+
+To build the project:
+
+    ionic build
+
+To launch the project:
+
+    ionic serve [--platform=ios | android] [--browser chrome | firefox | safari]
+
+Some examples:
+    
+    ionic serve --platform=ios
+    ionic serve --platform=android
+    ionic serve --platform=windows
+    
+    ionic serve --platform=ios --browser safari
+    ionic serve --platform=android --browser chrome
+    ionic serve --platform=windows --browser firefox
+
+You can preview all three supported Mobile platforms side by side:
+
+    ionic serve --lab
+
+For example, the 'Sign in' page:
+
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-sign-in-page.png">
+</p>
+
+and the 'Events' page:
+
+<p align="center">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/lab-events-page.png">
+</p>
+   
+#### Electron
+
+To launch the project:
+
+In a terminal run the following command:
+
+    ionic serve --no-open
+    
+If you want to set the 'ELECTRON_START_URL' environment variable on macOS or Linux:
+    
+    ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
+
+On Windows use:
+
+    set ELECTRON_START_URL=http://localhost:8104 ionic serve --no-open --port 8104
+
+In another terminal run the following command:
+
+    electron .
+
+**Note:** The commands must be run in separate terminal sessions as `ionic serve` is blocking.
+
+### Production
+
+To build the project:
+
+    ionic build --prod
+
+#### Electron
+    
+To package the application:
+
+    npm run dist
+
+If everything works as expected electron-builder will create a `/dist` directory.
+
 ## Unit Testing and End-to-End (E2E) Testing
 
-* [Testing an Angular project](https://angular.io/guide/testing)
-* [Testing an Ionic project](http://lathonez.com/2017/ionic-2-unit-testing/)
+
 
 Updated `tsconfig.ng-cli.json` in `compilerOptions`:
 ```json
@@ -296,24 +337,30 @@ Run:
 
 In the `./coverage` folder open `index.html`
 
-#### References:
+##### References:
 
-* [Easy to use environment variables for Ionic 3](https://github.com/gshigeto/ionic-environment-variables)
-* [Ionic CLI - Issue 1205 - Environment variable configuration](https://github.com/ionic-team/ionic-cli/issues/1205)
+* [Testing an Angular project](https://angular.io/guide/testing)
+* [Testing an Ionic project](http://lathonez.com/2017/ionic-2-unit-testing/)
 
-## Simple Logging Service
+## Logging
 
 Take a look at the `.ts` files in the `src/services/log4ts` directory.
 
-## uigradients
+##### References:
+
+* [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
+
+## Theming
+
+### uigradients
 
 See: https://uigradients.com and https://github.com/subinsebastian/uigradients-scss
 
 **Note:** `variables.scss` (in the /themes directory) includes `gradients.scss` and `gradient-mixins.scss`.
 
-#### References: 
+##### References:
 
-* [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
+* [Theming your Ionic 3 App](https://robferguson.org/blog/2017/11/13/theming-your-ionic-3-app-part-2/)
 
 ## Documentation
 
