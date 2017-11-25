@@ -1,3 +1,8 @@
+
+https://github.com/Microsoft/vscode-cordova
+
+https://forum.ionicframework.com/t/source-maps-not-appearing-in-chrome-dev-tools-on-ionic-serve/86855/2
+
 ## config.xml:
 
 Update the package name:
