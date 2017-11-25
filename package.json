@@ -27,13 +27,12 @@
     "build": "ionic-app-scripts build",
     "ios:build": "ionic-app-scripts build --platform=ios",
 
-
-
     "test": "ng test",
     "test-coverage": "ng test --code-coverage",
     "test-ci": "ng test --watch=false --code-coverage",
     "e2e": "ionic-app-scripts build && protractor",
     "postinstall": "webdriver-manager update --gecko false",
+
     "start": "ionic serve --no-open",
     "electron": "electron .",
     "concurrently-start": "concurrently -k 'ionic serve --no-open' 'wait-on http://localhost:8100/ && electron'",
@@ -43,6 +42,9 @@
 
     "docs": "./node_modules/.bin/compodoc -d ./docs/ -p ./tsconfig.json --theme vagrant",
     "serve-docs": "./node_modules/.bin/compodoc -s -d ./docs"
+
+    "ionic:build": "ionic-app-scripts build",
+    "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
     "@angular/common": "5.0.1",

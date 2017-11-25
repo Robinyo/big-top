@@ -84,7 +84,9 @@ Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/io
  `dev`          | Run dev server for Android platform and launch default browser.
  `ios:dev`      | Short cut for `npm run dev --platform=ios`
  `build`        | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
- `ios:build`    | Short cut for `npm run build --platform=ios` 
+ `ios:build`    | Short cut for `npm run build --platform=ios`
+ `test`         | Run unit test using the Karma test runner.
+ `e2e`          | Run end-to-end (e2e) tests using Protractor.
  `docs`         | Generate project documentation.
  `serve-docs`   | Serve project documentation.
 
