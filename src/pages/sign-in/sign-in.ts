@@ -12,7 +12,7 @@ import { LoggerService } from '@services/log4ts/logger.service';
 @IonicPage()
 @Component({
   selector: 'page-sign-in',
-  templateUrl: 'sign-in.html'
+  templateUrl: './sign-in.html'
 })
 export class SignInPage {
 

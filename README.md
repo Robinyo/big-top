@@ -236,6 +236,64 @@ import { ENV } from '@env'
 !**/environment.model.ts
 ```
 
+## Unit Testing and End-to-End (E2E) Testing
+
+* [Testing an Angular project](https://angular.io/guide/testing)
+* [Testing an Ionic project](http://lathonez.com/2017/ionic-2-unit-testing/)
+
+Updated `tsconfig.ng-cli.json` in `compilerOptions`:
+```json
+"paths": {
+  "@app/env"": [
+    "environments/environment"
+  ]
+}
+```
+
+Updated `angular-cli.json` in `apps`:
+```json
+"environments": {
+        "dev": "environments/environment.dev.ts",
+        "prod": "environments/environment.ts"
+      }
+}
+```
+
+### Jasmine
+
+The [Jasmine test framework](https://jasmine.github.io/2.4/introduction.html) provides everything needed to write basic tests.
+
+### Karma
+
+The [Karma test runner](https://karma-runner.github.io/1.0/index.html) is ideal for writing and running unit tests while
+developing an application. It can be an integral part of the project's development and continuous integration processes.
+
+Run:
+ 
+    npm run test
+
+### Protractor
+
+Use protractor to write and run end-to-end (e2e) tests. End-to-end tests explore the application as users experience it. 
+In e2e testing, one process runs the real application and a second process runs protractor tests that simulate user 
+behavior and assert that the application respond in the browser as expected.
+
+Run:
+    
+    ionic serve [--platform=ios]
+
+Then (in a second terminal session):
+
+    npm run e2e
+
+### Test Coverage
+
+Run:
+    
+    npm run test-coverage
+
+In the `./coverage` folder open `index.html`
+
 #### References:
 
 * [Easy to use environment variables for Ionic 3](https://github.com/gshigeto/ionic-environment-variables)
@@ -245,9 +303,56 @@ import { ENV } from '@env'
 
 Take a look at the `.ts` files in the `src/services/log4ts` directory.
 
+## uigradients
+
+See: https://uigradients.com and https://github.com/subinsebastian/uigradients-scss
+
+**Note:** `variables.scss` (in the /themes directory) includes `gradients.scss` and `gradient-mixins.scss`.
+
 #### References: 
 
 * [A simple logging service for Angular 4](https://robferguson.org/blog/2017/09/09/a-simple-logging-service-for-angular-4/)
+
+## Documentation
+
+To install Compodoc globally:
+
+    npm install -g @compodoc/compodoc
+
+To add Compodoc to your project:
+
+    npm install --save-dev @compodoc/compodoc
+
+Define script tasks for Compodoc in your `package.json`:
+
+    "scripts": {
+      "docs": "./node_modules/.bin/compodoc -d ./docs/ -p ./tsconfig.json --theme vagrant",
+      "serve-docs": "./node_modules/.bin/compodoc -s -d ./docs"
+    }
+  
+To generate documentation (using Compodoc):
+
+    npm run docs
+
+To serve the generated documentation:
+
+    npm run serve-docs
+
+Open your browser and navigate to:
+
+    http://localhost:8080
+
+**Note:** You can exclude files from the generated documentation by using `exclude` in `tsconfig.json`:
+
+```
+  "exclude": [
+    "./node_modules",
+    "./temp/**/*.ts",
+    "./src/environments/*.ts",
+    "./src/services/**/*.ts",
+    "**/*.spec.ts"
+  ]
+```
 
 ## Scaffolding
 
