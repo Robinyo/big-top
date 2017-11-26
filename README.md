@@ -103,7 +103,7 @@ Scripts are configured in the project's `package.json` file. For example:
  `docs`         | Generate project documentation.
  `serve-docs`   | Serve project documentation.
 
-To run the `dev` script found in the `package.json` scripts property, execute:
+To run the `dev` script found in the `package.json` 'scripts' property, execute:
 
     npm run dev
 
