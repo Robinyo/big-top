@@ -92,11 +92,11 @@ Scripts are configured in the project's `package.json` file. For example:
 
  Task           | Description
 ----------------|---------------------------------------------------------------------------------------
- `clean`        | Empty the `www/build` directory.
+ `clean`        | Empty the project's `www/build` directory.
  `lint`         | Run the linter against the project's `.ts` files, using the `tslint.json` config file located in the project's root directory.
  `dev`          | Run the dev server for the Android platform and launch the default browser.
  `ios:dev`      | Short cut for `npm run dev --platform=ios`
- `build`        | A complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
+ `build`        | Create a complete build of the application. Uses the development settings by default. Use `--prod` to create an optimised build.
  `ios:build`    | Short cut for `npm run build --platform=ios`
  `test`         | Run unit test using the Karma test runner.
  `e2e`          | Run end-to-end (e2e) tests using Protractor.
