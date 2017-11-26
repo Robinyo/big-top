@@ -75,7 +75,7 @@ ionic serve --platform=ios
 ### Task Automation
 
 Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/ionic-app-scripts) executed from npm scripts. 
-Ionic's npm scripts are configured in the project's `package.json` file. For example:
+Scripts are configured in the project's `package.json` file. For example:
 
 ```
   "scripts": {
