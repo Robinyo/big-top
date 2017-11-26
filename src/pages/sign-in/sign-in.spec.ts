@@ -2,8 +2,8 @@ import { ComponentFixture, async } from '@angular/core/testing';
 
 import { TestUtils }               from '../../test';
 
-// import { SignInPage } from './sign-in';
-import { SignInPage } from '@pages/sign-in/sign-in';
+import { SignInPage } from './sign-in';
+// import { SignInPage } from '@pages/sign-in/sign-in';
 
 let fixture: ComponentFixture<SignInPage> = null;
 let instance: any = null;
