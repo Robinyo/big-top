@@ -358,12 +358,17 @@ Updated `tsconfig.ng-cli.json` in `compilerOptions`:
 }
 ```
 
-Updated `angular-cli.json` in `apps`:
+Updated `.angular-cli.json` in `apps`:
 ```json
 "environments": {
   "dev": "environments/environment.dev.ts",
   "prod": "environments/environment.ts"
 }
+```
+
+Updated `/src/tsconfig.spec.json` in `compilerOptions`:
+```json
+"baseUrl": "./",
 ```
 
 ### Jasmine
