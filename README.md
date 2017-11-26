@@ -11,9 +11,11 @@
     - [Features](#features)
     - [Roadmap](#roadmap)
     - [Quick Start](#quick-start)    
+    - [Task Automation](#task-automation)
+        - [Default Tasks](#default-tasks)
     - [Screen Shots](#screen-shots)
 - [Build Management](#build-management) 
-    - [Environment Variables](#environment-variables)
+    - [Aliases and Environment-specific Variables](#aliases-and-environment-specific-variables)
     - [Development](#development)
     - [Production](#production)
 - [Unit Testing and End-to-End Testing](#unit-testing-and-end-to-end-testing) 
@@ -70,9 +72,23 @@ npm install
 ionic serve --platform=ios
 ```
 
-### Build Tasks
+### Task Automation
 
-Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/ionic-app-scripts).
+Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/ionic-app-scripts) executed from npm scripts. 
+Ionic's npm scripts are configured in the project's `package.json` file. For example:
+
+```
+  "scripts": {
+    ...
+    "dev": "ionic-app-scripts serve",
+    "ios:dev": "ionic-app-scripts serve --platform=ios",
+    "build": "ionic-app-scripts build",
+    "ios:build": "ionic-app-scripts build --platform=ios",
+    ... 
+  }
+```
+
+#### Default Tasks
 
  Task           | Description
 ----------------|---------------------------------------------------------------------------------------
@@ -87,9 +103,15 @@ Task automation is based on [Ionic App Scripts](https://github.com/ionic-team/io
  `docs`         | Generate project documentation.
  `serve-docs`   | Serve project documentation.
 
-To invoke a task:
+To run the `dev` script found in the `package.json` scripts property, execute:
 
-    npm run [task]
+    npm run dev
+
+#### Command-line Flags
+
+Command-line flags can be also applied to `npm run` commands:
+
+    npm run build --prod
 
 ### Screen Shots
 
@@ -131,9 +153,9 @@ The **Big Top Desktop Edition's installer** running on macOS Sierra:
 
 ## Build Management
 
-### Environment Variables
+### Aliases and Environment-specific Variables
 
-I followed these steps to add support for environment variables.
+I followed these steps to add support for aliases and environment-specific variables.
 
 Updated `compilerOptions` in `tsconfig.json`:
 ```json
