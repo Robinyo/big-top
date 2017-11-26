@@ -455,7 +455,7 @@ Open your browser and navigate to:
 
     http://localhost:8080
 
-**Note:** You can exclude files from the generated documentation by using `exclude` in `tsconfig.json`:
+**Note:** You can exclude files from the generated documentation by using 'exclude' in `tsconfig.json`:
 
 ```
   "exclude": [
