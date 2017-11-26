@@ -420,7 +420,7 @@ Take a look at the `.ts` files in the `src/services/log4ts` directory.
 
 See: https://uigradients.com and https://github.com/subinsebastian/uigradients-scss
 
-**Note:** `variables.scss` (in the /themes directory) includes `gradients.scss` and `gradient-mixins.scss`.
+**Note:** `variables.scss` (in the `/themes` directory) includes `gradients.scss` and `gradient-mixins.scss`.
 
 ##### References:
 
