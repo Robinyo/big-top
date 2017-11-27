@@ -69,7 +69,7 @@ cd big-top
 npm install
 
 # Launch the project
-ionic serve --platform=ios
+npm run ios:dev
 ```
 
 ### Task Automation
