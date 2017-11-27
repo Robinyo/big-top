@@ -1,6 +1,6 @@
 export abstract class Logger {
 
-  info: any;
-  warn: any;
-  error: any;
+  public info: any;
+  public warn: any;
+  public error: any;
 }

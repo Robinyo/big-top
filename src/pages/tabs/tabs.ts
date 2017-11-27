@@ -10,16 +10,16 @@ import { LoggerService } from '@services/log4ts/logger.service';
 @IonicPage()
 @Component({
   selector: 'page-tabs',
-  templateUrl: 'tabs.html',
+  templateUrl: 'tabs.html'
 })
 export class TabsPage {
 
-  tab1Root: any = EventsPage;
-  tab2Root: any = SearchPage;
-  tab3Root: any = SearchPage;
-  tab4Root: any = SearchPage;
+  public tab1Root: any = EventsPage;
+  public tab2Root: any = SearchPage;
+  public tab3Root: any = SearchPage;
+  public tab4Root: any = SearchPage;
 
-  tabIndex: number;
+  public tabIndex: number;
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,

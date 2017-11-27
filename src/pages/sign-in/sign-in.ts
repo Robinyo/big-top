@@ -16,9 +16,9 @@ import { LoggerService } from '@services/log4ts/logger.service';
 })
 export class SignInPage {
 
-  credentialsForm: FormGroup;
+  public credentialsForm: FormGroup;
 
-  submitted: boolean = false;
+  public submitted: boolean = false;
 
   // component = EventsPage;
 
@@ -62,7 +62,7 @@ export class SignInPage {
     });
   }
 
-  onSignIn() {
+  public onSignIn() {
 
     this.submitted = true;
 
@@ -75,7 +75,7 @@ export class SignInPage {
     }
   }
 
-  onForgotPassword() {
+  public onForgotPassword() {
     this.logger.info('SignInPage: onForgotPassword()');
   }
 }

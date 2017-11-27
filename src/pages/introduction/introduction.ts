@@ -9,13 +9,13 @@ import { SignInPage } from '@pages/sign-in/sign-in';
 @IonicPage()
 @Component({
   selector: 'page-introduction',
-  templateUrl: 'introduction.html',
+  templateUrl: 'introduction.html'
 })
 export class IntroductionPage implements OnInit {
 
-  @ViewChild(Slides) slides: Slides;
+  @ViewChild(Slides) private slides: Slides;
 
-  component = SignInPage;
+  private component: any = SignInPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
               private logger: LoggerService) {
@@ -23,7 +23,7 @@ export class IntroductionPage implements OnInit {
     this.logger.info('IntroductionPage initialised');
   }
 
-  ngOnInit() {
+  public ngOnInit() {
 
     this.logger.info('IntroductionPage: ngOnInit()');
 
@@ -33,12 +33,12 @@ export class IntroductionPage implements OnInit {
     this.slides.paginationType = 'bullets';  // 'bullets', 'fraction' or 'progress';
   }
 
-  slideChanged() {
+  public slideChanged() {
     // let currentIndex = this.slides.getActiveIndex();
     // this.logger.info('Current index is ' + currentIndex);
   }
 
-  nextPage() {
+  public nextPage() {
     this.logger.info('IntroductionPage: nextPage()');
     this.navCtrl.push(this.component);
   }

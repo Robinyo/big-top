@@ -16,13 +16,13 @@ interface CardInterface {
 @IonicPage()
 @Component({
   selector: 'page-events',
-  templateUrl: 'events.html',
+  templateUrl: 'events.html'
 })
 export class EventsPage {
 
-  location:String = 'Kingston, ACT';
+  private location: String = 'Kingston, ACT';
 
-  cards: CardInterface[] = [
+  private cards: CardInterface[] = [
     {
       name: 'Innovation Showcase 2017',
       location: 'Canberra Fitters Workshop',
@@ -64,11 +64,11 @@ export class EventsPage {
     this.logger.info('EventsPage initialised');
   }
 
-  toggleLocation() {
+  public toggleLocation() {
     this.logger.info('EventsPage: toggleLocation()');
   }
 
-  goToEvent(card: any) {
+  public goToEvent(card: any) {
     this.logger.info('EventsPage: goToEvent()');
   }
 }

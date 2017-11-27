@@ -17,7 +17,7 @@ export class HomePage {
     this.logger.info('HomePage initialised');
   }
 
-  click() {
+  public click() {
     this.logger.info('HomePage: toggleTheme()');
     this.event.publish('theme:toggle');
   }

@@ -5,9 +5,9 @@ import { Logger } from './logger';
 @Injectable()
 export class LoggerService implements Logger {
 
-  info: any;
-  warn: any;
-  error: any;
+  public info: any;
+  public warn: any;
+  public error: any;
 }
 
 /*
@@ -33,4 +33,3 @@ export class NoOpLogger implements Logger {
 */
 
 // The set of built-in Log4j levels includes TRACE, DEBUG, INFO, WARN, ERROR, and FATAL.
-

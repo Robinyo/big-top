@@ -31,33 +31,33 @@ interface PageInterface {
 })
 export class BigTopApp {
 
-  @ViewChild(Nav) nav: Nav;
-  @ViewChild(Content) content: Content;
+  @ViewChild(Nav) private nav: Nav;
+  @ViewChild(Content) private content: Content;
 
-  navigationPages: PageInterface[] = [
+  public navigationPages: PageInterface[] = [
     { title: 'Discover Events', name: 'IntroductionPage', component: IntroductionPage, icon: 'beer' }
     // { title: 'Discover Venues', name: 'IntroductionPage', component: IntroductionPage, icon: 'person' },
   ];
 
-  accountPages: PageInterface[] = [
+  public accountPages: PageInterface[] = [
     // { title: 'Sign In', name: 'SignInPage', component: SignInPage, icon: 'log-in' }
     // { title: 'My Account', name: 'IntroductionPage', component: IntroductionPage, icon: 'person' },
     // { title: 'Register', name: 'IntroductionPage', component: IntroductionPage, icon: 'person-add' }
   ];
 
-  settingsPages: PageInterface[] = [
+  public settingsPages: PageInterface[] = [
     { title: 'Connected Services', name: 'IntroductionPage', component: IntroductionPage, icon: 'bluetooth' }
   ];
 
-  legalPages: PageInterface[] = [
+  public legalPages: PageInterface[] = [
     { title: 'Terms of Use', name: 'IntroductionPage', component: IntroductionPage, icon: 'document' },
     { title: 'Privacy Policy', name: 'IntroductionPage', component: IntroductionPage, icon: 'body' },
     { title: 'About Big Top', name: 'IntroductionPage', component: IntroductionPage, icon: 'information-circle' }
   ];
 
-  rootPage:any = IntroductionPage;
+  public rootPage: any = IntroductionPage;
 
-  theme:String = 'facebook-messenger-theme';
+  public theme: String = 'facebook-messenger-theme';
 
   constructor(public platform: Platform,
               public event: Events,
@@ -66,7 +66,7 @@ export class BigTopApp {
     this.initializeApp();
   }
 
-  initializeApp() {
+  private initializeApp() {
 
     this.getPlatformInfo();
 
@@ -75,15 +75,15 @@ export class BigTopApp {
     });
   }
 
-  openPage(page: any) {
+  public openPage(page: any) {
     this.nav.setRoot(page.component);
   }
 
-  signIn() {
+  public signIn() {
     this.nav.push(SignInPage);
   }
 
-  toggleTheme() {
+  public toggleTheme() {
 
     this.logger.info('BigTopApp: toggleTheme()');
 

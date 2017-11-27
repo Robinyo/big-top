@@ -58,4 +58,3 @@ import { ConsoleLoggerService } from '@services/log4ts/console-logger.service';
   ]
 })
 export class AppModule {}
-

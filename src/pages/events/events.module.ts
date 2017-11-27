@@ -4,10 +4,10 @@ import { EventsPage } from './events';
 
 @NgModule({
   declarations: [
-    EventsPage,
+    EventsPage
   ],
   imports: [
-    IonicPageModule.forChild(EventsPage),
-  ],
+    IonicPageModule.forChild(EventsPage)
+  ]
 })
 export class EventsPageModule {}

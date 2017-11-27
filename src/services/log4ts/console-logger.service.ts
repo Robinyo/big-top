@@ -36,5 +36,3 @@ export class ConsoleLoggerService implements Logger {
     }
   }
 }
-
-

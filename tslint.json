@@ -46,11 +46,6 @@
     "no-string-literal": false,
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
-    "no-unused-variable": [
-      true,
-      "check-parameters",
-      { "ignore-pattern": "^ng*|^on*" }
-    ],
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-var-requires": true,
@@ -71,27 +66,23 @@
     "trailing-comma": [
       true,
       {
-        "multiline": "always",
+        "multiline": "never",
         "singleline": "never"
       }
     ],
     "triple-equals": [true],
     "typedef": [
       true,
-      "call-signature",
       "parameter",
       "property-declaration",
-      "variable-declaration",
       "member-variable-declaration"
     ],
     "typedef-whitespace": [
       true,
       {
-        "call-signature": "nospace",
         "index-signature": "nospace",
         "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
+        "property-declaration": "nospace"
       }
     ],
     "variable-name": [
