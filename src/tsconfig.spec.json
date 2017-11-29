@@ -4,14 +4,23 @@
     "outDir": "../dist/out-tsc/spec",
     "module": "commonjs",
     "target": "es5",
-    "baseUrl": "./",
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "baseUrl": "../src",
+    "paths": {
+      "@app/*": [ "app/*" ],
+      "@assets/*": [ "assets/*" ],
+      "@env": [ "environments/environment" ],
+      "@pages/*": [ "pages/*" ],
+      "@services/*": [ "services/*" ],
+      "@tests/*": [ "./*" ],
+      "@theme/*": [ "theme/*" ]
+    }
   },
   "files": [
-    "test.ts"
+    "src/test.ts"
   ],
   "include": [
     "**/*.spec.ts",

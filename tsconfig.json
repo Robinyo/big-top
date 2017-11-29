@@ -25,6 +25,7 @@
       "@env": [ "environments/environment" ],
       "@pages/*": [ "pages/*" ],
       "@services/*": [ "services/*" ],
+      "@tests/*": [ "./*" ],
       "@theme/*": [ "theme/*" ]
     }
   },

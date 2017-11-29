@@ -20,8 +20,11 @@ import { FormsModule } from '@angular/forms';
 import { App, Config, Form, IonicModule, Keyboard, DomController, MenuController, NavController, NavParams, Platform } from 'ionic-angular';
 import { ConfigMock, NavParamsMock, PlatformMock } from 'ionic-mocks';
 
-import { LoggerService } from './services/log4ts/logger.service';
-import { ConsoleLoggerService } from './services/log4ts/console-logger.service';
+// import { LoggerService } from './services/log4ts/logger.service';
+// import { ConsoleLoggerService } from './services/log4ts/console-logger.service';
+
+import { LoggerService } from '@services/log4ts/logger.service';
+import { ConsoleLoggerService } from '@services/log4ts/console-logger.service';
 
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
 declare let __karma__: any;
@@ -35,7 +38,7 @@ __karma__.loaded = function (): void {
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting(),
+  platformBrowserDynamicTesting()
 );
 
 // Then we find all the tests.
@@ -72,7 +75,7 @@ export class TestUtils {
         let fixture: any = TestBed.createComponent(components[0]);
         return {
           fixture: fixture,
-          instance: fixture.debugElement.componentInstance,
+          instance: fixture.debugElement.componentInstance
         };
       });
   }
@@ -80,7 +83,7 @@ export class TestUtils {
   public static configureIonicTestingModule(components: Array<any>): typeof TestBed {
     return TestBed.configureTestingModule({
       declarations: [
-        ...components,
+        ...components
       ],
       providers: [
         App, Form, Keyboard, DomController, MenuController, NavController,
@@ -92,7 +95,7 @@ export class TestUtils {
       imports: [
         FormsModule,
         IonicModule
-      ],
+      ]
     });
   }
 

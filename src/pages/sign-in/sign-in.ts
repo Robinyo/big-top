@@ -62,6 +62,27 @@ export class SignInPage {
     });
   }
 
+  /*
+
+  public onKeyUp(event: any) {
+
+    this.logger.info('SignInPage: onKeyUp()');
+
+    let newValue = event.target.value;
+
+    // Alphanumberic + space
+    let regExp = new RegExp('^[A-Za-z0-9? ]+$');
+
+    if (regExp.test(newValue)) {
+      this.logger.info('value: ' + event.target.value);
+    } else {
+      event.target.value = newValue.slice(0, -1);
+      this.logger.info('value: ' + event.target.value);
+    }
+  }
+
+  */
+
   public onSignIn() {
 
     this.submitted = true;

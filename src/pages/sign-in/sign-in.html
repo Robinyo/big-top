@@ -26,11 +26,17 @@
     <ion-input doesn't support autofocus
     -->
     <ion-item>
-      <ion-label floating>Email</ion-label>
+      <ion-label floating>
+        Email
+      </ion-label>
       <!--
-      <ion-input formControlName="email" type="email"></ion-input>
+      <ion-input [formControl]="credentialsForm.controls['email']"
+                 (keyup)="onKeyUp($event)"
+                 type="email">
+      </ion-input>
       -->
-      <ion-input [formControl]="credentialsForm.controls['email']" type="email"></ion-input>
+      <ion-input [formControl]="credentialsForm.controls['email']" type="email">
+      </ion-input>
     </ion-item>
 
     <div *ngIf="!credentialsForm.controls.email.valid &&
@@ -39,10 +45,9 @@
     </div>
 
     <ion-item>
-      <ion-label floating>Password</ion-label>
-      <!--
-      <ion-input formControlName="password" type="password"></ion-input>
-      -->
+      <ion-label floating>
+        Password
+      </ion-label>
       <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
 
@@ -95,6 +100,9 @@
 </ion-content>
 
 <!--
+
+<ion-input formControlName="email" type="email"></ion-input>
+<ion-input formControlName="password" type="password"></ion-input>
 
 <ion-footer no-border>
 </ion-footer>
