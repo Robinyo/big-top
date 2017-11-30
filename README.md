@@ -174,6 +174,7 @@ Updated `compilerOptions` in `tsconfig.json`:
       "@env": [ "environments/environment" ],
       "@pages/*": [ "pages/*" ],
       "@services/*": [ "services/*" ],
+      "@tests/*": [ "./*" ],
       "@theme/*": [ "theme/*" ]
     }
   }
@@ -198,6 +199,7 @@ if (env === 'prod' || env === 'dev') {
     "@env": path.resolve(environmentPath()),
     "@pages": path.resolve('./src/pages/'),
     "@services": path.resolve('./src/services/'),
+    "@tests": path.resolve('./src/'),    
     "@theme": path.resolve('./src/theme/')
   };
 
@@ -211,6 +213,7 @@ if (env === 'prod' || env === 'dev') {
     "@env": path.resolve(environmentPath()),
     "@pages": path.resolve('./src/pages/'),
     "@services": path.resolve('./src/services/'),
+    "@tests": path.resolve('./src/'),    
     "@theme": path.resolve('./src/theme/')
   };
 
@@ -368,7 +371,16 @@ Updated `.angular-cli.json` in `apps`:
 
 Updated `/src/tsconfig.spec.json` in `compilerOptions`:
 ```json
-"baseUrl": "./",
+"baseUrl": "../src",
+"paths": {
+  "@app/*": [ "app/*" ],
+  "@assets/*": [ "assets/*" ],
+  "@env": [ "environments/environment" ],
+  "@pages/*": [ "pages/*" ],
+  "@services/*": [ "services/*" ],
+  "@tests/*": [ "./*" ],
+  "@theme/*": [ "theme/*" ]
+}
 ```
 
 ### Jasmine
@@ -493,6 +505,7 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 * Rob Ferguson's blog: [Ionic 3 and Forms](https://robferguson.org/blog/2017/11/19/ionic-3-and-forms/)
 * Rob Ferguson's blog: [Ionic 3 and Forms - Part 2](https://robferguson.org/blog/2017/11/20/ionic-3-and-forms-part-2/)
 * Rob Ferguson's blog: [Working with TypeScript, webpack and Ionic 3](https://robferguson.org/blog/2017/11/22/working-with-typescript-webpack-and-ionic-3/)
+* Rob Ferguson's blog: [Testing your Ionic 3 App](https://robferguson.org/blog/2017/11/28/testing-your-ionic-3-app/)
 
 ## Style Guides 
 * Angular docs: [Angular Style Guide](https://angular.io/guide/styleguide)
