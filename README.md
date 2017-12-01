@@ -111,7 +111,16 @@ To run the `build` script found in the `package.json` 'scripts' property, execut
 
 Command-line flags can be also applied to `npm run` commands:
 
-    npm run build --prod
+    npm run ios:build --prod
+
+To serve your `--prod` build:
+
+    cd www
+    python -m SimpleHTTPServer 8080
+
+Navigate to:
+
+    http://localhost:8080
 
 ### Screen Shots
 

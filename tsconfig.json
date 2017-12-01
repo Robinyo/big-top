@@ -36,7 +36,8 @@
     "node_modules",
     "src/test.ts",
     "**/*.spec.ts",
-    "e2e"
+    "e2e",
+    "src/pages/home/*.ts"
   ],
   "compileOnSave": false,
   "atom": {
