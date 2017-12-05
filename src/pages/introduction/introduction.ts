@@ -2,14 +2,28 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
+import { SignInPage } from '@pages/sign-in/sign-in';
+
 import { LoggerService } from '@services/log4ts/logger.service';
 
-import { SignInPage } from '@pages/sign-in/sign-in';
+// import {FLY_IN_OUT} from "@pages/animations/animation";
+import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 
 @IonicPage()
 @Component({
   selector: 'page-introduction',
-  templateUrl: 'introduction.html'
+  templateUrl: 'introduction.html',
+  animations: [
+
+    trigger('flyInBottomSlow', [
+      state('in', style({transform: 'translate3d(0, 0, 0)'})),
+      transition('void => *', [
+        style({transform: 'translate3d(0, 2000px, 0'}),
+        animate('1s ease-in-out')
+      ])
+    ])
+
+  ]
 })
 export class IntroductionPage implements OnInit {
 

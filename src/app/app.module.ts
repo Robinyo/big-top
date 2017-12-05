@@ -1,5 +1,6 @@
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
@@ -31,6 +32,7 @@ import { ConsoleLoggerService } from '@services/log4ts/console-logger.service';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     // HttpModule,
     IonicModule.forRoot(BigTopApp, {}, {
       links: [

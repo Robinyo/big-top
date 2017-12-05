@@ -16,7 +16,7 @@
 
   <ion-row class="app-icon-container">
     <ion-col text-center>
-      <ion-icon name="ionic" class="app-icon-zoom"></ion-icon>
+      <ion-icon [@flyInBottomSlow]="'in'" name="ionic" class="app-icon-zoom"></ion-icon>
     </ion-col>
   </ion-row>
 
@@ -25,7 +25,7 @@
     <!--
     <ion-input doesn't support autofocus
     -->
-    <ion-item>
+    <ion-item [@flyInOutEmail]="'in'">
       <ion-label floating>
         Email
       </ion-label>
@@ -44,7 +44,7 @@
       Please enter a valid email.
     </div>
 
-    <ion-item>
+    <ion-item [@flyInOutPassword]="'in'">
       <ion-label floating>
         Password
       </ion-label>
@@ -67,7 +67,8 @@
 
     <ion-row class="sign-in-button-container">
       <ion-col text-center>
-        <button ion-button block color="secondary" [disabled]="!credentialsForm.valid" (click)="onSignIn()">
+        <button [@flyInOutSignIn]="'in'" ion-button block color="secondary"
+                [disabled]="!credentialsForm.valid" (click)="onSignIn()">
           Sign in
         </button>
       </ion-col>
@@ -75,7 +76,7 @@
 
     <ion-row>
       <ion-col text-center>
-        <button ion-button clear color="light" (click)="onForgotPassword()">
+        <button [@flyInOutForgotYourPassword]="'in'" ion-button clear color="light" (click)="onForgotPassword()">
           Forgot your password?
         </button>
       </ion-col>
@@ -84,7 +85,7 @@
     <ion-row>
       <div class="fab-container" style="padding-top: 80px;">
         <ion-fab left bottom>
-          <button ion-fab color="primary"><ion-icon name="log-in"></ion-icon></button>
+          <button [@flyInOutForgotYourPassword]="'in'" ion-fab color="primary"><ion-icon name="log-in"></ion-icon></button>
           <ion-fab-list side="right">
             <button ion-fab color="light"><ion-icon name="logo-facebook"></ion-icon></button>
             <button ion-fab color="light"><ion-icon name="logo-twitter"></ion-icon></button>
@@ -100,6 +101,9 @@
 </ion-content>
 
 <!--
+
+    <ion-item [@flyInOut]="emailState">
+    <ion-item [@flyInOut]="passwordState">
 
 <ion-input formControlName="email" type="email"></ion-input>
 <ion-input formControlName="password" type="password"></ion-input>
