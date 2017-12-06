@@ -9,96 +9,14 @@ import { regexValidators } from '@pages/validators/validator';
 
 import { LoggerService } from '@services/log4ts/logger.service';
 
-// import {FLY_IN_OUT} from "@pages/animations/animation";
-import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
+import {slideInLeft} from '@pages/animations/sliding-entrances/slide-in-left.animation';
+import {slideInUpWithDelay} from '@pages/animations/sliding-entrances/slide-in-up-with-delay.animation';
 
 @IonicPage()
 @Component({
   selector: 'page-sign-in',
   templateUrl: './sign-in.html',
-  animations: [
-
-    trigger('flyInBottomSlow', [
-      state('in', style({transform: 'translate3d(0, 0, 0)'})),
-      transition('void => *', [
-        style({transform: 'translate3d(0, 2000px, 0'}),
-        animate('4s ease-in-out')
-      ])
-    ]),
-
-    trigger('flyInOutEmail', [
-        state('in', style({opacity: 1, transform: 'translateX(0)'})),
-        transition('void => *', [
-          style({
-            opacity: 0,
-            transform: 'translateX(-100%)'
-          }),
-          animate('1s 200ms ease-in')
-        ]),
-        transition('* => void', [
-          animate('1s 200ms ease-out', style({
-            opacity: 0,
-            transform: 'translateX(100%)'
-          }))
-        ])
-      ]
-    ),
-
-    trigger('flyInOutPassword', [
-        state('in', style({opacity: 1, transform: 'translateX(0)'})),
-        transition('void => *', [
-          style({
-            opacity: 0,
-            transform: 'translateX(-100%)'
-          }),
-          animate('2s 200ms ease-in')
-        ]),
-        transition('* => void', [
-          animate('2s 200ms ease-out', style({
-            opacity: 0,
-            transform: 'translateX(100%)'
-          }))
-        ])
-      ]
-    ),
-
-    trigger('flyInOutSignIn', [
-        state('in', style({opacity: 1, transform: 'translateX(0)'})),
-        transition('void => *', [
-          style({
-            opacity: 0,
-            transform: 'translateX(-100%)'
-          }),
-          animate('3s 200ms ease-in')
-        ]),
-        transition('* => void', [
-          animate('3s 200ms ease-out', style({
-            opacity: 0,
-            transform: 'translateX(100%)'
-          }))
-        ])
-      ]
-    ),
-
-    trigger('flyInOutForgotYourPassword', [
-        state('in', style({opacity: 1, transform: 'translateX(0)'})),
-        transition('void => *', [
-          style({
-            opacity: 0,
-            transform: 'translateX(-100%)'
-          }),
-          animate('3s 200ms ease-in')
-        ]),
-        transition('* => void', [
-          animate('3s 200ms ease-out', style({
-            opacity: 0,
-            transform: 'translateX(100%)'
-          }))
-        ])
-      ]
-    )
-
-  ]
+  animations: [ slideInLeft, slideInUpWithDelay ]
 })
 export class SignInPage {
 
@@ -106,7 +24,7 @@ export class SignInPage {
 
   public submitted: boolean = false;
 
-  // component = EventsPage;
+  private component: any = TabsPage;
 
   public emailState: any = 'out';
   public passwordState: any = 'in';
@@ -181,7 +99,7 @@ export class SignInPage {
     this.logger.info('Password: ' + this.credentialsForm.controls['password'].value);
 
     if (this.credentialsForm.valid) {
-      this.navCtrl.push(TabsPage);
+      this.navCtrl.push(this.component);
     }
   }
 

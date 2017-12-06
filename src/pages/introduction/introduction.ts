@@ -6,28 +6,21 @@ import { SignInPage } from '@pages/sign-in/sign-in';
 
 import { LoggerService } from '@services/log4ts/logger.service';
 
-// import {FLY_IN_OUT} from "@pages/animations/animation";
-import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
+// import {slideInLeft} from '@pages/animations/sliding-entrances/slide-in-left.animation';
+import {slideInUp} from '@pages/animations/sliding-entrances/slide-in-up.animation';
 
 @IonicPage()
 @Component({
   selector: 'page-introduction',
   templateUrl: 'introduction.html',
-  animations: [
-
-    trigger('flyInBottomSlow', [
-      state('in', style({transform: 'translate3d(0, 0, 0)'})),
-      transition('void => *', [
-        style({transform: 'translate3d(0, 2000px, 0'}),
-        animate('1s ease-in-out')
-      ])
-    ])
-
-  ]
+  animations: [ slideInUp ]
 })
 export class IntroductionPage implements OnInit {
 
   @ViewChild(Slides) private slides: Slides;
+
+  public slide1State: any = 'out';
+  public slide2State: any = 'out';
 
   private component: any = SignInPage;
 
@@ -48,8 +41,12 @@ export class IntroductionPage implements OnInit {
   }
 
   public slideChanged() {
-    // let currentIndex = this.slides.getActiveIndex();
-    // this.logger.info('Current index is ' + currentIndex);
+    let currentIndex = this.slides.getActiveIndex();
+    this.logger.info('Current index is ' + currentIndex);
+
+    if (currentIndex === 1) {
+      this.slide1State = (this.slide1State === 'in') ? 'out' : 'in';
+    }
   }
 
   public nextPage() {
@@ -57,3 +54,11 @@ export class IntroductionPage implements OnInit {
     this.navCtrl.push(this.component);
   }
 }
+
+/*
+
+    if (currentIndex === 1) {
+      this.slide1State = (this.slide1State === 'in') ? 'out' : 'in';
+    }
+
+*/

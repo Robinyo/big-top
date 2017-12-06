@@ -30,7 +30,7 @@
 
       <ion-row>
         <ion-col text-center>
-          <ion-icon [@flyInBottomSlow]="'in'" name="ionic" style="zoom: 3.0;"></ion-icon>
+          <ion-icon [@slideInUp]="'in'" name="ionic" style="zoom: 3.0;"></ion-icon>
           <h1>Welcome to the <strong>Big Top</strong></h1>
         </ion-col>
       </ion-row>
@@ -57,7 +57,7 @@
 
     <ion-slide>
 
-      <p>
+      <p [@slideInUp]="slide1State">
         Find popular venues, unique local experiences and events just for you.
       </p>
 
@@ -67,7 +67,7 @@
 
     <ion-slide>
 
-      <p>
+      <p [@slideInUp]="slide2State">
         See where your friends are going so you never miss out on the fun.
       </p>
 
