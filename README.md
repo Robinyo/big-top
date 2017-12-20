@@ -1,7 +1,7 @@
 # The Big Top App
 
 <p align="center">
-  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/slide-in-animation.gif">
+  <img src="https://github.com/Robinyo/big-top/blob/master/screen-shots/merry-xmas.gif">
 </p>
 
 ## Table of Contents
