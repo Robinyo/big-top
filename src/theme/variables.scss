@@ -10,6 +10,13 @@ $app-direction: ltr;
 
 @import "ionic.globals";  // /node_modules/ionic-angular/themes/ionic.globals.scss
 
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
 // uigradients
 // For more info, please see: https://github.com/subinsebastian/uigradients-scss
 @import './gradient-mixins';

@@ -30,8 +30,8 @@
 
 ## Introduction
 
-A sample app that demonstrates how **one** codebase can be used for Mobile (iOS, Android and Windows Phone) and 
-Desktop (masOS, Linux and Windows) platforms.
+A sample app built using Ionic 3, Angular 5, Apache Cordova/PhoneGap and Electron that demonstrates how **one** 
+codebase can be used for Mobile (iOS, Android and Windows Phone) and Desktop (masOS, Linux and Windows) platforms.
 
 ### License
 
@@ -51,7 +51,7 @@ See: [CONTRIBUTING.md](https://github.com/Robinyo/big-top/blob/master/.github/CO
 - Documentation generation using Compodoc
 
 ### Roadmap
-* Continuous Integration
+- Continuous Integration
 
 ### Quick Start
 

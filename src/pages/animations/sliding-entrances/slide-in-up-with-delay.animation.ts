@@ -14,4 +14,3 @@ export const slideInUpWithDelay =
   );
 
 // transform: 'translate3d(0, 100%, 0)'
-

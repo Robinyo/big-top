@@ -1,13 +1,13 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
 import { SignInPage } from '@pages/sign-in/sign-in';
 
-import { LoggerService } from '@services/log4ts/logger.service';
+// import { slideInLeft } from '@pages/animations/sliding-entrances/slide-in-left.animation';
+import { slideInUp } from '@pages/animations/sliding-entrances/slide-in-up.animation';
 
-// import {slideInLeft} from '@pages/animations/sliding-entrances/slide-in-left.animation';
-import {slideInUp} from '@pages/animations/sliding-entrances/slide-in-up.animation';
+import { LoggerService } from '@services/log4ts/logger.service';
 
 @IonicPage()
 @Component({

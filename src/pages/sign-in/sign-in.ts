@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Content, IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
@@ -9,8 +9,8 @@ import { regexValidators } from '@pages/validators/validator';
 
 import { LoggerService } from '@services/log4ts/logger.service';
 
-import {slideInLeft} from '@pages/animations/sliding-entrances/slide-in-left.animation';
-import {slideInUpWithDelay} from '@pages/animations/sliding-entrances/slide-in-up-with-delay.animation';
+import { slideInLeft } from '@pages/animations/sliding-entrances/slide-in-left.animation';
+import { slideInUpWithDelay } from '@pages/animations/sliding-entrances/slide-in-up-with-delay.animation';
 
 @IonicPage()
 @Component({
@@ -18,7 +18,9 @@ import {slideInUpWithDelay} from '@pages/animations/sliding-entrances/slide-in-u
   templateUrl: './sign-in.html',
   animations: [ slideInLeft, slideInUpWithDelay ]
 })
-export class SignInPage {
+export class SignInPage implements OnInit {
+
+  @ViewChild(Content) private content: Content;
 
   public credentialsForm: FormGroup;
 
@@ -67,6 +69,27 @@ export class SignInPage {
       */
 
     });
+  }
+
+  public ngOnInit() {
+
+    this.logger.info('SignInPage: ngOnInit()');
+
+    this.setDisableScroll(true);
+  }
+
+  /**
+   * @param {boolean} disable  Show/Hide the vertical scrollbar
+   *
+   * @example
+   * this.setDisableScroll(true);
+   *
+   * @returns {void}
+   */
+  private setDisableScroll(disable: boolean) : void {
+
+    let scroll = this.content.getScrollElement();
+    scroll.style.overflowY = disable ? 'hidden' : 'scroll';
   }
 
   /*

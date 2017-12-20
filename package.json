@@ -41,7 +41,7 @@
     "ionic:serve": "ionic-app-scripts serve"
   },
   "dependencies": {
-    "@angular/animations": "^5.0.5",
+    "@angular/animations": "^5.0.3",
     "@angular/common": "5.0.3",
     "@angular/compiler": "5.0.3",
     "@angular/compiler-cli": "5.0.3",
@@ -65,7 +65,7 @@
     "@angular/cli": "^1.5.4",
     "@angular/router": "^5.0.3",
     "@compodoc/compodoc": "^1.0.4",
-    "@ionic/app-scripts": "3.1.4",
+    "@ionic/app-scripts": "3.1.5",
     "@types/jasmine": "^2.8.2",
     "@types/node": "^8.0.53",
     "concurrently": "^3.5.0",
