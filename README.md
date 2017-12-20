@@ -549,3 +549,5 @@ You can also use `ionic g [page|component|directive|pipe|provider|tabs] [element
 ### Ionic Boilerplate generator that use the Angular CLI
 * GitHub: [generator-ngx-rocket](https://github.com/ngx-rocket/generator-ngx-rocket)
 
+### TypeScript Library Boilerplates
+* GitHub: [Starter kit with zero-config for building a library in TypeScript](https://github.com/alexjoverm/typescript-library-starter/)
