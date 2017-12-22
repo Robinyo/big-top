@@ -9,14 +9,14 @@ import { regexValidators } from '@pages/validators/validator';
 
 import { LoggerService } from '@services/log4ts/logger.service';
 
-import { slideInLeft } from '@pages/animations/sliding-entrances/slide-in-left.animation';
-import { slideInUpWithDelay } from '@pages/animations/sliding-entrances/slide-in-up-with-delay.animation';
+import { SLIDE_IN_LEFT_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-left.animation';
+import { SANTA_STATE_ANIMATION } from '@pages/animations/sliding-entrances/santa-state.animation';
 
 @IonicPage()
 @Component({
   selector: 'page-sign-in',
   templateUrl: './sign-in.html',
-  animations: [ slideInLeft, slideInUpWithDelay ]
+  animations: [ SANTA_STATE_ANIMATION, SLIDE_IN_LEFT_ANIMATION ]
 })
 export class SignInPage implements OnInit {
 
@@ -28,8 +28,7 @@ export class SignInPage implements OnInit {
 
   private component: any = TabsPage;
 
-  public emailState: any = 'out';
-  public passwordState: any = 'in';
+  public santaState: any = 'in';
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
@@ -75,7 +74,18 @@ export class SignInPage implements OnInit {
 
     this.logger.info('SignInPage: ngOnInit()');
 
-    this.setDisableScroll(true);
+    // this.setDisableScroll(true);
+  }
+
+  public toggleSantaState() {
+
+    if (this.santaState === 'in') {
+      this.santaState = 'out';
+    } else {
+      this.santaState = 'in';
+    }
+
+    // this.logger.info('SignInPage: toggleSantaState(): ' + this.santaState);
   }
 
   /**
@@ -127,7 +137,7 @@ export class SignInPage implements OnInit {
   }
 
   public onForgotPassword() {
-    this.logger.info('SignInPage: onForgotPassword()');
+    this.toggleSantaState();
   }
 }
 
