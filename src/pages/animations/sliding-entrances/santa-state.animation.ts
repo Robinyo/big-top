@@ -17,10 +17,10 @@ export const SANTA_STATE_ANIMATION =
       style({
         transform: 'translateX(-100%)'
       }),
-      animate('200ms ease-in')
+      animate('100ms ease-in')
     ]),
     transition('in => out', [
-      animate('200ms ease-out', style({
+      animate('100ms ease-out', style({
         transform: 'translateX(100%)'
       }))
     ])
