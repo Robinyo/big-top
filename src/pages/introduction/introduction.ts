@@ -4,8 +4,7 @@ import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 
 import { SignInPage } from '@pages/sign-in/sign-in';
 
-// import { slideInLeft } from '@pages/animations/sliding-entrances/slide-in-left.animation';
-import { slideInUp } from '@pages/animations/sliding-entrances/slide-in-up.animation';
+import { SLIDE_IN_UP_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-up.animation';
 
 import { LoggerService } from '@services/log4ts/logger.service';
 
@@ -13,7 +12,7 @@ import { LoggerService } from '@services/log4ts/logger.service';
 @Component({
   selector: 'page-introduction',
   templateUrl: 'introduction.html',
-  animations: [ slideInUp ]
+  animations: [ SLIDE_IN_UP_ANIMATION ]
 })
 export class IntroductionPage implements OnInit {
 

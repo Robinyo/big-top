@@ -3,7 +3,8 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
 export const SANTA_STATE_ANIMATION =
   trigger('santaState', [
     state('in', style({
-      opacity: 1})),
+      opacity: 1,
+      transform: 'translateX(0)'})),
     state('out', style({
       opacity: 0})),
     transition('void => *', [
