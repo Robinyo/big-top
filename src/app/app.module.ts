@@ -2,7 +2,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { Config, IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { BigTopApp } from './app.component';
 
@@ -20,6 +20,9 @@ import { SearchPage } from '@pages/search/search';
 // Logging Services
 import { LoggerService } from '@services/log4ts/logger.service';
 import { ConsoleLoggerService } from '@services/log4ts/console-logger.service';
+
+// Bespoke Page Transitions
+import { SlideTransition } from '@pages/transitions/slide-transition';
 
 @NgModule({
   declarations: [
@@ -59,4 +62,8 @@ import { ConsoleLoggerService } from '@services/log4ts/console-logger.service';
     {provide: LoggerService, useClass: ConsoleLoggerService}
   ]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(public config: Config) {
+    this.config.setTransition('slide-transition', SlideTransition);
+  }
+}

@@ -52,8 +52,15 @@ export class IntroductionPage implements OnInit {
 
   public nextPage() {
 
+    // The property 'animation' understands the following values: md-transition, ios-transition and wp-transition.
+
     let navOptions = {
-      animation: 'ios-transition'
+      animation: 'slide-transition'
+      // animate	  boolean	Whether or not the transition should animate.
+      // animation	string	What kind of animation should be used.
+      // direction	string	The conceptual direction the user is navigating. For example, is the user navigating forward, or back?
+      // duration	  number	The length in milliseconds the animation should take.
+      // easing	    string	The easing for the animation.
     };
 
     this.logger.info('IntroductionPage: nextPage()');
@@ -62,6 +69,10 @@ export class IntroductionPage implements OnInit {
 }
 
 /*
+
+    let navOptions = {
+      animation: 'ios-transition'
+    };
 
     if (currentIndex === 1) {
       this.slide1State = (this.slide1State === 'in') ? 'out' : 'in';

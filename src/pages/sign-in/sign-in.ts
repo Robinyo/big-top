@@ -10,13 +10,14 @@ import { regexValidators } from '@pages/validators/validator';
 import { LoggerService } from '@services/log4ts/logger.service';
 
 import { SLIDE_IN_LEFT_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-left.animation';
-import { SANTA_STATE_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-santa.animation';
+import { SLIDE_IN_UP_WITH_DELAY_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-up-with-delay.animation';
+// import { SANTA_STATE_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-santa.animation';
 
 @IonicPage()
 @Component({
   selector: 'page-sign-in',
   templateUrl: './sign-in.html',
-  animations: [ SANTA_STATE_ANIMATION, SLIDE_IN_LEFT_ANIMATION ]
+  animations: [ SLIDE_IN_LEFT_ANIMATION, SLIDE_IN_UP_WITH_DELAY_ANIMATION ]
 })
 export class SignInPage implements OnInit {
 
@@ -131,8 +132,12 @@ export class SignInPage implements OnInit {
     this.logger.info('Email: ' + this.credentialsForm.controls['email'].value);
     this.logger.info('Password: ' + this.credentialsForm.controls['password'].value);
 
+    let navOptions = {
+      animation: 'slide-transition'
+    };
+
     if (this.credentialsForm.valid) {
-      this.navCtrl.push(this.component);
+      this.navCtrl.push(this.component, null, navOptions);
     }
   }
 
