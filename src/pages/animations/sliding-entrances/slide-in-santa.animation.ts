@@ -1,7 +1,7 @@
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 
 export const SANTA_STATE_ANIMATION =
-  trigger('santaState', [
+  trigger('slideInSanta', [
     state('in', style({
       opacity: 1,
       transform: 'translateX(0)'})),
@@ -11,7 +11,7 @@ export const SANTA_STATE_ANIMATION =
       style({
         transform: 'translateX(-100%)'
       }),
-      animate('2s ease-in')
+      animate('2s 100ms ease-in')
     ]),
     transition('out => in', [
       style({

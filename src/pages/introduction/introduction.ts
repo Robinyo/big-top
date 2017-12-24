@@ -48,9 +48,16 @@ export class IntroductionPage implements OnInit {
     }
   }
 
+  // https://ionicframework.com/docs/api/navigation/NavController/
+
   public nextPage() {
+
+    let navOptions = {
+      animation: 'ios-transition'
+    };
+
     this.logger.info('IntroductionPage: nextPage()');
-    this.navCtrl.push(this.component);
+    this.navCtrl.push(this.component, null, navOptions);
   }
 }
 

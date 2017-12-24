@@ -10,7 +10,7 @@ import { regexValidators } from '@pages/validators/validator';
 import { LoggerService } from '@services/log4ts/logger.service';
 
 import { SLIDE_IN_LEFT_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-left.animation';
-import { SANTA_STATE_ANIMATION } from '@pages/animations/sliding-entrances/santa-state.animation';
+import { SANTA_STATE_ANIMATION } from '@pages/animations/sliding-entrances/slide-in-santa.animation';
 
 @IonicPage()
 @Component({
