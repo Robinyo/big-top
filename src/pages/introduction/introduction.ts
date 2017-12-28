@@ -8,6 +8,8 @@ import { SLIDE_IN_UP_ANIMATION } from '@pages/animations/sliding-entrances/slide
 
 import { LoggerService } from '@services/log4ts/logger.service';
 
+import moment from 'moment';
+
 @IonicPage()
 @Component({
   selector: 'page-introduction',
@@ -32,6 +34,10 @@ export class IntroductionPage implements OnInit {
   public ngOnInit() {
 
     this.logger.info('IntroductionPage: ngOnInit()');
+
+    let data = moment().format('YYYYMMDD');
+    let time = moment().format('HHmmss');
+    this.logger.info('today is: ', data + ' and time: ', time);
 
     this.slides.spaceBetween = 100;
     // this.slides.autoplay = 2000;
