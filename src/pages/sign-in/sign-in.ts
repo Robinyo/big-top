@@ -105,6 +105,23 @@ export class SignInPage implements OnInit {
 
   /*
 
+  <ion-input [formControl]="credentialsForm.controls['email']"
+             (keyup)="onKeyUp($event)"
+             type="email">
+  </ion-input>
+
+  // const NUMBER_REGEXP = /^\s*(\-|\+)?(\d+|(\d*(\.\d*)))([eE][+-]?\d+)?\s*$/;
+
+  public onKeyUp(event: any) {
+
+    let newValue = event.target.value;
+    let regExp = new RegExp(NUMBER_REGEXP);
+
+    if (!regExp.test(newValue)) {
+      event.target.value = newValue.slice(0, -1);
+    }
+  }
+
   public onKeyUp(event: any) {
 
     this.logger.info('SignInPage: onKeyUp()');

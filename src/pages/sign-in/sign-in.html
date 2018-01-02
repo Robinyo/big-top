@@ -41,6 +41,9 @@
                  (keyup)="onKeyUp($event)"
                  type="email">
       </ion-input>
+
+      <ion-input [formControl]="credentialsForm.controls['email']" type="email">
+      </ion-input>
       -->
       <ion-input [formControl]="credentialsForm.controls['email']" type="email">
       </ion-input>
@@ -57,14 +60,6 @@
       </ion-label>
       <ion-input [formControl]="credentialsForm.controls['password']" type="password"></ion-input>
     </ion-item>
-
-    <!--
-    <div *ngIf="credentialsForm.controls.password.hasError('pattern') &&
-        (credentialsForm.controls.password.dirty || submitted)"
-         class="validator-error">
-      Passwords should be at least 8 characters long and contain one number, one character and one special character.
-    </div>
-    -->
 
     <div *ngIf="credentialsForm.controls.password.hasError('pattern') &&
         (credentialsForm.controls.password.dirty || submitted)"
